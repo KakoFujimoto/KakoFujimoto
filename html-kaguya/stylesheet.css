@@ -106,13 +106,29 @@ body{
     width:1280px;
     margin: 0 auto;
 }
+a{
+    color: #3B3B3B;
+    text-decoration: none;
+}
 header{
+    margin: 0 96px 0 96px;
     font-size: 16px;
     height: 56px;
-    display: flex;
-    justify-content: space-between;
 }
-.header-logo{
+header ul{
+    display: flex;
+    list-style: none;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.main-message{
+    background: url(images/home_top.png);
+    height: 744px;
+}
+
+
+/* .header-logo{
     height: 37px;
     width: 62px;
     margin: 11px auto 10px 88px;
@@ -443,4 +459,4 @@ figure:hover figcaption{
 .footer-02 p{
     text-align: center;
     margin-top: 68px;
-    margin-bottom: 28px;
+    margin-bottom: 28px; */
