@@ -111,20 +111,35 @@ a{
     text-decoration: none;
 }
 header{
-    margin: 0 96px 0 96px;
-    font-size: 16px;
+    margin: 16px 96px 0 96px;
     height: 56px;
 }
 header ul{
     display: flex;
     list-style: none;
 }
+nav li{
+    margin-left: 56px;
+    margin-top: 26px;
+}
 nav li:first-child{
     margin-right: auto;
+    margin-top: 16px;
 }
 .main-message{
     background: url(images/home_top.png);
     height: 744px;
+}
+.main-message h1{
+    color: #918F89;
+    font-size: 53px;
+    width: 609px;
+    height: 137px;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 32px 32px 32px 88px;
+    position: relative;
+    top: 306px;
 }
 
 
