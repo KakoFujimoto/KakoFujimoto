@@ -187,9 +187,15 @@ nav li:first-child{
     margin-right: 64px;
     height: 320px;
     width: 320px;
+    opacity: 0.6;
 }
 figure{
     position: relative;
+}
+.furniture-img{
+    background-color: #000;
+    height: 320px;
+    width: 320px;
 }
 figcaption{
     color: #fff;
