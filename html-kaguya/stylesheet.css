@@ -164,7 +164,15 @@ nav li:first-child{
     letter-spacing: 0.36px;
 }
 /* ③NEWS */
-
+.new-items{
+    height: 456px;
+}
+.img-container{
+    display: flex;
+}
+.img-container img{
+    margin-right: 64px;
+}
 
 
 
