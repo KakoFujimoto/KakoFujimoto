@@ -119,8 +119,7 @@ header ul{
     list-style: none;
 }
 nav li{
-    margin-left: 56px;
-    margin-top: 26px;
+    margin: 26px 0 0 56px;
 }
 nav li:first-child{
     margin-right: auto;
