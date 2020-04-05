@@ -145,7 +145,7 @@ nav li:first-child{
 /* ②暮らしを提案する */
 .our-proposal{
     height: 560px;
-    background: url(images/imgA.png);
+    background: url(images/imgA.png) no-repeat left 88px top 0;
 }
 .our-proposal h2{
     font-size: 25px;
