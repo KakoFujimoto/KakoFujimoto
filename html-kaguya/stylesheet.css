@@ -177,6 +177,7 @@ nav li:first-child{
 /* ③NEWS */
 .new-items{
     height: 456px;
+    margin-bottom: 240px;
 }
 .new-items h2{
     font-size: 23px;
@@ -194,11 +195,9 @@ nav li:first-child{
     width: 320px;
     opacity: 0.6;
 }
-figure{
-    position: relative;
-}
 .furniture-img{
     margin-right: 64px;
+    position: relative;
     background-color: #000;
     height: 320px;
     width: 320px;
@@ -210,9 +209,9 @@ figcaption{
     left: 47px;
 }
 
-/* ますはフィルターをかけて文字を画像に載せてから
-view moreのとこまでのmargin-bottomとる */
-
+.catalogue{
+    height: 216px;
+}
 
 
 
