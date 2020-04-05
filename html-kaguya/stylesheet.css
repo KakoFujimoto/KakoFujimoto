@@ -149,17 +149,18 @@ nav li:first-child{
     background: url(images/imgA.png) no-repeat left 88px top 0;
     background-size: 560px 560px;
     margin-bottom: 240px;
+    position: relative;
 }
 .our-proposal h2{
     font-size: 25px;
-    position: relative;
+    position: absolute;
     top: 240px;
     left: 704px;
     letter-spacing: 2.5px;
 }
 .our-proposal p{
     font-size: 12px;
-    position: relative;
+    position: absolute;
     top: 300px;
     left: 704px;
     line-height: 30px;
