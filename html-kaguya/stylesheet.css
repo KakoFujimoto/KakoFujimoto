@@ -208,6 +208,13 @@ figcaption{
     top: 144px;
     left: 47px;
 }
+.new-items p{
+    text-align: center;
+    letter-spacing: 0.43px;
+}
+.new-items span{
+    color: #918F89;
+}
 
 /* ④公式カタログ */
 .catalogue{
