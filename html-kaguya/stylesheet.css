@@ -167,6 +167,10 @@ nav li:first-child{
 .new-items{
     height: 456px;
 }
+.new-items h2{
+    font-size: 23px;
+    letter-spacing: 2.3px;
+}
 .img-container{
     display: flex;
 }
