@@ -153,15 +153,16 @@ nav li:first-child{
 }
 .our-proposal h2{
     font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 2.5px;
     position: absolute;
     top: 240px;
     left: 704px;
-    letter-spacing: 2.5px;
 }
 .our-proposal p{
     font-size: 12px;
     position: absolute;
-    top: 300px;
+    top: 336px;
     left: 704px;
     line-height: 30px;
     letter-spacing: 0.36px;
