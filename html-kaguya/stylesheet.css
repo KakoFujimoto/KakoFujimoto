@@ -181,32 +181,18 @@ nav li:first-child{
 .img-container{
     display: flex;
     justify-content: center;
-    margin: 0 0 56px 80px;
+    margin: 0 0 56px 70px;
 }
 .img-container img{
     margin-right: 64px;
     height: 320px;
     width: 320px;
 }
-.img-couch{
-    background: url(images/imgD.png);
-    background-size: 320px 320px;
+figure{
     position: relative;
-    height: 320px;
-    width: 320px;
-}
-.img-couch:before{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /*半透明のフィルターをかける*/
 }
 figcaption{
     color: #fff;
-    text-align: center;
     position: absolute;
     top: 144px;
     left: 47px;
