@@ -135,6 +135,7 @@ nav li:first-child{
 .main-message h1{
     color: #918F89;
     font-size: 53px;
+    font-weight: normal;
     width: 609px;
     height: 137px;
     background-color: #fff;
