@@ -100,6 +100,7 @@ input, select {
 }
 /* ====== /リセットcss ====== */
 
+/* ここから本番のcss */
 body{
     font-family: "Noto Sans", sans-serif;
     color: #3B3B3B;
@@ -125,8 +126,11 @@ nav li:first-child{
     margin-right: auto;
     margin-top: 16px;
 }
+.header-logo{
+    width: 38px;
+    height: 24px;
+}
 
-/* ここから本番のcss */
 /* ①メイン画像 */
 .main-message{
     background: url(images/imgB.png);
