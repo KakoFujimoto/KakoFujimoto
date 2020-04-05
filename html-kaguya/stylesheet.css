@@ -181,7 +181,7 @@ nav li:first-child{
 .img-container{
     display: flex;
     justify-content: center;
-    margin: 0 56px 70px;
+    margin: 0 0 56px 65px;
 }
 .img-container img{
     height: 320px;
