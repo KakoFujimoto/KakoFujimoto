@@ -181,10 +181,9 @@ nav li:first-child{
 .img-container{
     display: flex;
     justify-content: center;
-    margin: 0 0 56px 70px;
+    margin: 0 56px 70px;
 }
 .img-container img{
-    margin-right: 64px;
     height: 320px;
     width: 320px;
     opacity: 0.6;
@@ -193,12 +192,13 @@ figure{
     position: relative;
 }
 .furniture-img{
+    margin-right: 64px;
     background-color: #000;
     height: 320px;
     width: 320px;
 }
 figcaption{
-    color: #fff;
+    color: #ccc;
     position: absolute;
     top: 144px;
     left: 47px;
