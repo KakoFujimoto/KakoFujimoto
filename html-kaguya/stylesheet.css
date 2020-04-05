@@ -125,9 +125,11 @@ nav li:first-child{
     margin-right: auto;
     margin-top: 16px;
 }
+/* ①メイン画像 */
 .main-message{
-    background: url(images/home_top.png);
+    background: url(images/imgB.png);
     height: 744px;
+    margin-bottom: 80px;
 }
 .main-message h1{
     color: #918F89;
@@ -139,6 +141,17 @@ nav li:first-child{
     padding: 32px 32px 32px 88px;
     position: relative;
     top: 306px;
+}
+/* ②暮らしを提案する */
+.our-proposal{
+    height: 560px;
+    background: url(images/imgA.png);
+}
+.our-proposal h2{
+    font-size: 25px;
+}
+.our-proposal p{
+    font-size: 12px;
 }
 
 
