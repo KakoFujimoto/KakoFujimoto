@@ -177,10 +177,12 @@ nav li:first-child{
 .img-container{
     display: flex;
     justify-content: center;
-    margin-left: 80px;
+    margin: 0 0 56px 80px;
 }
 .img-container img{
     margin-right: 64px;
+    height: 320px;
+    width: 320px;
 }
 
 
