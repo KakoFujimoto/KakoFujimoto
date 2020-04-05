@@ -130,6 +130,7 @@ nav li:first-child{
     background: url(images/imgB.png);
     height: 744px;
     margin-bottom: 80px;
+    position: relative;
 }
 .main-message h1{
     color: #918F89;
@@ -139,7 +140,7 @@ nav li:first-child{
     background-color: #fff;
     opacity: 0.8;
     padding: 32px 32px 32px 88px;
-    position: relative;
+    position: absolute;
     top: 306px;
 }
 /* ②暮らしを提案する */
@@ -184,6 +185,11 @@ nav li:first-child{
     height: 320px;
     width: 320px;
 }
+
+
+
+/* ますはフィルターをかけて文字を画像に載せてから
+view moreのとこまでのmargin-bottomとる */
 
 
 
