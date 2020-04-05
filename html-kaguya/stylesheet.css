@@ -147,6 +147,7 @@ nav li:first-child{
     height: 560px;
     background: url(images/imgA.png) no-repeat left 88px top 0;
     background-size: 560px 560px;
+    margin-bottom: 240px;
 }
 .our-proposal h2{
     font-size: 25px;
@@ -170,13 +171,17 @@ nav li:first-child{
 .new-items h2{
     font-size: 23px;
     letter-spacing: 2.3px;
+    text-align: center;
+    margin-bottom: 48px;
 }
 .img-container{
     display: flex;
+    justify-content: center;
 }
 .img-container img{
     margin-right: 64px;
 }
+
 
 
 
