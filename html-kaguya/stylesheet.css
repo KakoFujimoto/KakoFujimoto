@@ -146,12 +146,20 @@ nav li:first-child{
 .our-proposal{
     height: 560px;
     background: url(images/imgA.png) no-repeat left 88px top 0;
+    background-size: 560px 560px;
 }
 .our-proposal h2{
     font-size: 25px;
+    position: relative;
+    top: 200px;
+    left: 704px;
 }
 .our-proposal p{
     font-size: 12px;
+    position: relative;
+    top: 250px;
+    left: 704px;
+    line-height: 25px;
 }
 
 
