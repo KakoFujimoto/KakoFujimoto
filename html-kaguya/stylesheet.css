@@ -108,16 +108,24 @@ body{
     margin: 0 auto;
 }
 a{
-    color: #3B3B3B;
     text-decoration: none;
+    color: #3B3B3B;
 }
 header{
     margin: 16px 96px 0 96px;
     height: 56px;
 }
+header a{
+    color: #B2B2B2;
+    text-decoration: none;
+}
 header ul{
     display: flex;
     list-style: none;
+}
+header span{
+    color: #3B3B3B;
+    font-size: 16px;
 }
 nav li{
     margin: 26px 0 0 56px;
