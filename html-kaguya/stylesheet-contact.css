@@ -141,64 +141,75 @@ nav li:first-child{
 
 /* ①メイン画像 */
 .main-message{
-    background: url(images/imgG.png);
+    background: url(images/imgH.png);
     height: 456px;
-    margin-bottom: 160px;
+    margin-bottom: 80px;
     position: relative;
+    margin-bottom: 161px;
 }
 .main-message h1{
-    color: #918F89;
+    color: #fff;
     font-size: 30px;
     letter-spacing: 3px;
     font-weight: normal;
     position: absolute;
-    top: 191px;
+    top: 192px;
     left: 228px;
 }
 
-/* ②入荷情報 */
-.coming-items{
-    height: 400px;
-    margin-bottom: 320px;
+/* ②お問い合わせ */
+.form-part{
+    margin-bottom: 240px;
+    height: 464px;
 }
-.coming-items h2{
-    font-size: 23px;
-    letter-spacing: 2.3px;
+.form-part h2{
+    font-size: 24px;
     font-weight: normal;
+    letter-spacing: 2.4px;
+    margin-bottom: 40px;
     text-align: center;
-    margin-bottom: 56px;
 }
-.img-container{
-    display: flex;
-    justify-content: center;
-    margin: 0 0 56px 65px;
-}
-.img-container img{
-    height: 320px;
-    width: 320px;
-    opacity: 0.6;
-}
-.furniture-img{
-    margin-right: 64px;
-    position: relative;
-    background-color: #000;
-    height: 320px;
-    width: 320px;
-}
-figcaption{
-    color: #ccc;
-    position: absolute;
-    top: 144px;
-    left: 47px;
-}
-.new-items p{
+.form-part p{
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    margin-bottom: 72px;
     text-align: center;
-    letter-spacing: 0.43px;
 }
-span{
-    font-size: 11px;
-    color: #918F89;
+.form-part form{
+    text-align: center;
 }
+input[type="text"],
+input[type="email"]{
+    padding-left: 16px;
+    margin-bottom: 34px;
+    width: 454px;
+    height: 32px;
+    color: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;  
+}
+textarea{
+    padding: 10px 0 0 16px;
+    margin-bottom: 47px;
+    resize: none;
+    width: 454px;
+    height: 200px;
+    color: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;
+}
+input[type="submit"]{
+    text-align: center;
+    width: 161px;
+    height: 32px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    color: #707070;
+    background: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;  
+}
+
 /* ③フッター */
 footer{
     height: 240px;
