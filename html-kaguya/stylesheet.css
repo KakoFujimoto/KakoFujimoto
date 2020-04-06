@@ -284,7 +284,17 @@ textarea{
     border: 1px #D1D1D1 solid;
     border-radius: 20px;
 }
-
+input[type="submit"]{
+    text-align: center;
+    width: 161px;
+    height: 32px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    color: #707070;
+    background: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;  
+}
 
 /* .header-logo{
     height: 37px;
