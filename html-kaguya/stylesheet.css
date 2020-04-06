@@ -212,7 +212,7 @@ figcaption{
     text-align: center;
     letter-spacing: 0.43px;
 }
-.new-items span{
+span{
     font-size: 11px;
     color: #918F89;
 }
@@ -298,6 +298,7 @@ input[type="submit"]{
 
 /* ⑥リクルート  */
 .recruit-part{
+    margin-bottom: 320px;
     height: 192px;
 }
 .recruit-part h2{
