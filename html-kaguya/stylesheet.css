@@ -325,13 +325,13 @@ footer a{
     color: #fff;
 }
 footer ul{
-    padding: 120px 224px 80px 224px;
+    padding: 120px 224px 41px 224px;
     list-style: none;
     display: flex;
+    background: #918F89;
 }
-
-
-
 address{
+    padding-bottom: 24px;
     text-align: center;
+    background: #918F89;
 }
