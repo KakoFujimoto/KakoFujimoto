@@ -296,6 +296,25 @@ input[type="submit"]{
     border-radius: 20px;  
 }
 
+/* ⑥リクルート  */
+.recruit-part{
+    height: 192px;
+}
+.recruit-part h2{
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+}
+.recruit-part p{
+    margin-bottom: 39px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+    line-height: 30px;
+}
+
+
 /* .header-logo{
     height: 37px;
     width: 62px;
