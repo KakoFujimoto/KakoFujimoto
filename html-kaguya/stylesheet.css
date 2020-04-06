@@ -104,7 +104,7 @@ input, select {
 body{
     font-family: "Noto Sans", sans-serif;
     color: #3B3B3B;
-    width:1280px;
+    width: 100%;
     margin: 0 auto;
 }
 a{
@@ -319,6 +319,14 @@ input[type="submit"]{
 footer{
     height: 240px;
     background: #918F89;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+}
+footer ul{
+    list-style: none;
+    display: flex;
 }
 
 
