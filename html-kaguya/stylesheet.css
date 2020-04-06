@@ -250,8 +250,26 @@ figcaption{
     background: #918F89;
 }
 
-
-
+/* ⑤お問い合わせ */
+.form-part{
+    height: 464px;
+}
+.form-part h2{
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    margin-bottom: 47px;
+    text-align: center;
+}
+.form-part form{
+    text-align: center;
+}
+input[type="text"],
+input[type="email"]{
+    width: 454px;
+}
+textarea{
+    width: 454px;
+}
 
 
 /* .header-logo{
