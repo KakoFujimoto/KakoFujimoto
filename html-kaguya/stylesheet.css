@@ -315,6 +315,12 @@ input[type="submit"]{
     line-height: 30px;
 }
 
+/* ⑦フッター */
+footer{
+    height: 240px;
+    background: #918F89;
+}
+
 
 /* .header-logo{
     height: 37px;
