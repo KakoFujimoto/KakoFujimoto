@@ -235,7 +235,13 @@ figcaption{
     line-height: 30px;
 }
 .catalogue-dw{
-    margin-top: 10px;
+    width: 344px;
+    padding: 19px 64px;
+    background: #D1D1D1;
+    margin-top: 40px;
+    color: #707070;
+    font-size: 18px;
+    letter-spacing: 1.8px;
 }
 
 
