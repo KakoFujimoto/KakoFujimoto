@@ -252,6 +252,7 @@ figcaption{
 
 /* ⑤お問い合わせ */
 .form-part{
+    margin-bottom: 240px;
     height: 464px;
 }
 .form-part h2{
@@ -274,10 +275,11 @@ input[type="email"]{
     border-radius: 20px;  
 }
 textarea{
+    padding: 10px 0 0 16px;
+    margin-bottom: 47px;
     resize: none;
     width: 454px;
     height: 200px;
-    padding: 10px 0 0 16px;
     color: #D1D1D1;
     border: 1px #D1D1D1 solid;
     border-radius: 20px;
