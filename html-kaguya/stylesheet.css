@@ -265,10 +265,22 @@ figcaption{
 }
 input[type="text"],
 input[type="email"]{
+    padding-left: 16px;
+    margin-bottom: 34px;
     width: 454px;
+    height: 32px;
+    color: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;  
 }
 textarea{
+    resize: none;
     width: 454px;
+    height: 200px;
+    padding: 10px 0 0 16px;
+    color: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;
 }
 
 
