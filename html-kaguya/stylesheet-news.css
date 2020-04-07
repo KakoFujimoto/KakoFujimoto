@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* ====== リセットcss ====== */
+* {
+  box-sizing: border-box;
+}
+​
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+​
+body {
+    line-height:1;
+}
+​
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+​
+nav ul {
+    list-style:none;
+}
+​
+blockquote, q {
+    quotes:none;
+}
+​
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+​
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+​
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+​
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+​
+del {
+    text-decoration: line-through;
+}
+​
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+​
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+​
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+​
+input, select {
+    vertical-align:middle;
+}
+/* ====== /リセットcss ====== */
+
+/* ここから本番のcss */
+body{
+    font-family: "Noto Sans", sans-serif;
+    color: #3B3B3B;
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #3B3B3B;
+}
+header{
+    margin: 16px 96px 0 96px;
+    height: 56px;
+}
+header a{
+    color: #B2B2B2;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header span{
+    color: #3B3B3B;
+    font-size: 16px;
+}
+nav li{
+    margin: 26px 0 0 56px;
+}
+nav li:first-child{
+    margin-right: auto;
+    margin-top: 16px;
+}
+.header-logo{
+    width: 38px;
+    height: 24px;
+}
+
+/* ①メイン画像 */
+.main-message{
+    background: url(images/imgG.png);
+    height: 456px;
+    margin-bottom: 160px;
+    position: relative;
+}
+.main-message h1{
+    color: #918F89;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    position: absolute;
+    top: 191px;
+    left: 228px;
+}
+
+/* ②入荷情報 */
+.coming-items{
+    height: 400px;
+    margin-bottom: 320px;
+}
+.coming-items h2{
+    font-size: 23px;
+    letter-spacing: 2.3px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 56px 65px;
+}
+.img-container img{
+    height: 320px;
+    width: 320px;
+    opacity: 0.6;
+}
+.furniture-img{
+    margin-right: 64px;
+    position: relative;
+    background-color: #000;
+    height: 320px;
+    width: 320px;
+}
+figcaption{
+    color: #ccc;
+    position: absolute;
+    top: 144px;
+    left: 47px;
+}
+.new-items p{
+    text-align: center;
+    letter-spacing: 0.43px;
+}
+span{
+    font-size: 11px;
+    color: #918F89;
+}
+/* ③フッター */
+footer{
+    height: 240px;
+    background: #918F89;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+}
+footer ul{
+    padding: 120px 224px 41px 224px;
+    list-style: none;
+    display: flex;
+    background: #918F89;
+}
+address{
+    padding-bottom: 24px;
+    text-align: center;
+    background: #918F89;
+}
