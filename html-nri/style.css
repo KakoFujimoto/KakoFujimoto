@@ -92,6 +92,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: #003399;
 }
 .header-nav{
     margin-top: 0;
@@ -107,10 +108,17 @@ a{
     width: 100%;
 }
 .header-nav li{
-    padding-right: 35px;
+    padding-right: 30px;
 }
 .header-nav li:first-child{
     margin-right: auto;
+}
+.heder-nav-important{
+    font-size: 13px;
+    font-weight: bold;
+}
+.heder-nav-important a{
+    color: #000;
 }
 .logo{
     height: 40px;
@@ -455,6 +463,6 @@ address{
     font-style: normal;
     font-size: 10px;
     display: block;
-    padding-left: 70px;
+    margin-left: 138px;
     margin-bottom: 100px;
 }
