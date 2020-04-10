@@ -148,6 +148,7 @@ nav li{
 }
 /* ②暮らしを提案する */
 .our-proposal{
+    margin-left: 8%;
     height: 560px;
     background: url(images/imgA.png) no-repeat left 88px top 0;
     background-size: 560px 560px;
@@ -155,6 +156,7 @@ nav li{
     position: relative;
 }
 .our-proposal h2{
+    margin-left: 6%;
     font-size: 23px;
     font-weight: normal;
     letter-spacing: 2.5px;
@@ -163,6 +165,7 @@ nav li{
     left: 704px;
 }
 .our-proposal p{
+    margin-left: 6%;
     font-size: 12px;
     position: absolute;
     top: 336px;
@@ -322,6 +325,7 @@ footer ul{
     padding: 100px 224px 51px 623px;
     list-style: none;
     display: flex;
+    justify-content: flex-end;
     background: #918F89;
 }
 .site-logo{
