@@ -339,7 +339,7 @@ a{
     padding-left: 18px;
     background: url(images/7-11.svg) no-repeat;
     background-size: 10px 10px;
-    background-position: 0px 5px;
+    background-position: 0px 0px;
 }
 h4{
     padding: 30px 0;
@@ -403,7 +403,6 @@ h4{
 .links{
     display: flex;
     flex-wrap: wrap;
-    width: 1017px;
     margin-left: 10px;
 }
 .links ul{
@@ -427,7 +426,7 @@ h4{
 }
 #lis-top{
     margin-bottom: 12px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 18px;
     font-weight: bold;
 }
