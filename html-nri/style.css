@@ -412,8 +412,7 @@ h4{
 }
 .links li{
     font-size: 14px;
-    padding-left: 18px;
-    padding-bottom: 20px;
+    padding: 0 25px 18px;
     background: url(images/7-11.svg) no-repeat;
     background-size: 10px 10px;
     background-position: 0px 5px;
