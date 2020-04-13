@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* ====== リセットcss ====== */
 * {
   box-sizing: border-box;
 }
@@ -81,6 +80,7 @@ abbr[title], dfn[title] {
 }
 ​
 table {
+    border-collapse:collapse;
     border-spacing:0;
 }
 ​
@@ -167,7 +167,7 @@ nav li{
     text-align: center;
     margin-bottom: 32px;
 }
-.recruit-table{
+table{
     border-collapse: collapse;
     margin: 0 auto;
     width: 640px;
@@ -177,6 +177,7 @@ tr,td{
     border: 1px solid #707070;
 }
 td{
+    vertical-align: middle;
     padding: 16px 50px 16px 80px;
 }
 table li{
@@ -190,22 +191,20 @@ table li::before {
 	border-radius: 100%;
 	background: #3B3B3B;
 	position: relative;
-	left: -15px;
+	left: -3px;
 	top: -3px;
-}
-.clerk-job-details{
-    padding: 16px 0 16px 50px;
 }
 span{
     display: inline-block;
     font-size: 16px;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 }
 .job-type{
-    width: 172px;
+    width: 200px;
     font-size: 16px;
     background: #d5d5d5;
-    padding: 136px 48px;
+    vertical-align: middle;
+    /* padding: 136px 48px; */
 }
 /* ③フッター */
 footer{
