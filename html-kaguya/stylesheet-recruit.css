@@ -129,7 +129,6 @@ header ul{
 }
 header span{
     color: #3B3B3B;
-    font-size: 16px;
 }
 nav li{
     margin: 26px 0 0 56px;
@@ -200,11 +199,11 @@ span{
     padding-bottom: 6px;
 }
 .job-type{
-    width: 200px;
+    width: 220px;
     font-size: 16px;
+    padding: 0 auto;
     background: #d5d5d5;
     vertical-align: middle;
-    /* padding: 136px 48px; */
 }
 /* ③フッター */
 footer{
