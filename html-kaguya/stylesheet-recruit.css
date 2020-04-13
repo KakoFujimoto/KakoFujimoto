@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* ====== リセットcss ====== */
+* {
+  box-sizing: border-box;
+}
+​
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+​
+body {
+    line-height:1;
+}
+​
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+​
+nav ul {
+    list-style:none;
+}
+​
+blockquote, q {
+    quotes:none;
+}
+​
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+​
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+​
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+​
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+​
+del {
+    text-decoration: line-through;
+}
+​
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+​
+table {
+    border-spacing:0;
+}
+​
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+​
+input, select {
+    vertical-align:middle;
+}
+/* ====== /リセットcss ====== */
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    color: #3B3B3B;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #3B3B3B;
+}
+header{
+    margin: 16px 96px 0 96px;
+    height: 56px;
+    background: url(images/logo_header@2x.png) no-repeat;
+    background-size: 50px 31px;
+}
+header a{
+    color: #B2B2B2;
+    text-decoration: none;
+}
+header a:hover{
+    color: #3B3B3B;
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+header span{
+    color: #3B3B3B;
+    font-size: 16px;
+}
+nav li{
+    margin: 26px 0 0 56px;
+}
+.header-logo{
+    width: 38px;
+    height: 24px;
+}
+/* ①メイン画像 */
+.main-message{
+    background: url(images/recruit_top.png) no-repeat;
+    background-size: 100% 100%;
+    height: 456px;
+    margin-bottom: 161px;
+    position: relative;
+}
+.main-message h1{
+    color: #918F89;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    position: absolute;
+    top: 192px;
+    left: 228px;
+}
+/* ②採用情報  */
+.recruit-information{
+    margin-bottom: 320px;
+    font-size: 14px;
+}
+.recruit-information h2{
+    font-size: 23px;
+    letter-spacing: 2.3px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.recruit-table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 640px;
+    height: 624px;
+}
+tr,td{
+    border: 1px solid #707070;
+}
+td{
+    padding: 16px 50px 16px 80px;
+}
+table li{
+    list-style: none;
+}
+table li::before {
+	content: '';
+	width: 2px;
+	height: 2px;
+	display: inline-block;
+	border-radius: 100%;
+	background: #3B3B3B;
+	position: relative;
+	left: -15px;
+	top: -3px;
+}
+.clerk-job-details{
+    padding: 16px 0 16px 50px;
+}
+span{
+    display: inline-block;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+.job-type{
+    width: 172px;
+    font-size: 16px;
+    background: #d5d5d5;
+    padding: 136px 48px;
+}
+/* ③フッター */
+footer{
+    height: 240px;
+    background: #918F89;
+    color: #fff;
+    position: relative;
+}
+footer a{
+    color: #fff;
+}
+footer ul{
+    padding: 100px 224px 51px 623px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    background: #918F89;
+}
+.site-logo{
+    width: 64px;
+    height: 40px;
+    position: absolute;
+    left: 224px;
+    top: 120px;
+}
+footer p{
+    font-size: 13px;
+    padding-bottom: 14px;
+    text-align: center;
+    background: #918F89;
+}

@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+​
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -14,7 +15,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video{
+time, mark, audio, video {
     margin:0;
     padding:0;
     border:0;
@@ -23,57 +24,69 @@ time, mark, audio, video{
     vertical-align:baseline;
     background:transparent;
 }
-body{
+​
+body {
     line-height:1;
 }
+​
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
 }
-nav ul{
+​
+nav ul {
     list-style:none;
 }
+​
 blockquote, q {
     quotes:none;
 }
+​
 blockquote:before, blockquote:after,
 q:before, q:after {
     content:'';
     content:none;
 }
-a{
+​
+a {
     margin:0;
     padding:0;
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
 }
+​
 /* change colours to suit your needs */
-ins{
+ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
+​
 /* change colours to suit your needs */
-mark{
+mark {
     background-color:#ff9;
     color:#000;
     font-style:italic;
     font-weight:bold;
 }
+​
 del {
     text-decoration: line-through;
 }
+​
 abbr[title], dfn[title] {
     border-bottom:1px dotted;
     cursor:help;
 }
-table{
+​
+table {
     border-collapse:collapse;
     border-spacing:0;
 }
+​
 /* change border colour to suit your needs */
-hr{
+hr {
     display:block;
     height:1px;
     border:0;  
@@ -81,6 +94,7 @@ hr{
     margin:1em 0;
     padding:0;
 }
+​
 input, select {
     vertical-align:middle;
 }
@@ -128,135 +142,39 @@ nav li{
 }
 /* ①メイン画像 */
 .main-message{
-    background: url(images/imgB.png) no-repeat;
+    background: url(images/imgH.png) no-repeat;
     background-size: 100% 100%;
-    height: 744px;
+    height: 456px;
     margin-bottom: 80px;
     position: relative;
+    margin-bottom: 161px;
 }
 .main-message h1{
-    color: #918F89;
-    font-size: 53px;
-    font-weight: normal;
-    width: 609px;
-    height: 137px;
-    background-color: #fff;
-    opacity: 0.8;
-    padding: 32px 32px 32px 88px;
-    position: absolute;
-    top: 306px;
-}
-/* ②暮らしを提案する */
-.our-proposal{
-    margin-left: 8%;
-    height: 560px;
-    background: url(images/imgA.png) no-repeat left 88px top 0;
-    background-size: 560px 560px;
-    margin-bottom: 240px;
-    position: relative;
-}
-.our-proposal h2{
-    margin-left: 6%;
-    font-size: 23px;
-    font-weight: normal;
-    letter-spacing: 2.5px;
-    position: absolute;
-    top: 240px;
-    left: 704px;
-}
-.our-proposal p{
-    margin-left: 6%;
-    font-size: 12px;
-    position: absolute;
-    top: 336px;
-    left: 704px;
-    line-height: 30px;
-    letter-spacing: 0.36px;
-}
-/* ③NEWS */
-.new-items{
-    height: 456px;
-    margin-bottom: 240px;
-}
-.new-items h2{
-    font-size: 23px;
-    letter-spacing: 2.3px;
-    text-align: center;
-    margin-bottom: 48px;
-}
-.img-container{
-    display: flex;
-    justify-content: center;
-    margin: 0 0 56px 65px;
-}
-.img-container img{
-    height: 320px;
-    width: 320px;
-    opacity: 0.6;
-}
-.furniture-img{
-    margin-right: 64px;
-    position: relative;
-    background-color: #000;
-    height: 320px;
-    width: 320px;
-}
-figcaption{
-    color: #ccc;
-    position: absolute;
-    top: 144px;
-    left: 47px;
-}
-.new-items p{
-    text-align: center;
-    letter-spacing: 0.43px;
-}
-.fa{
-    padding-left: 7px;
-    font-size: 11px;
-    color: #B2B2B2;
-}
-/* ④公式カタログ */
-.catalogue{
-    height: 180px;
-    margin-bottom: 240px;
-}
-.catalogue h2{
-    font-size: 24px;
-    letter-spacing: 2.4px;
-    text-align: center;
-    margin-bottom: 48px;
-}
-.catalogue p{
-    font-size: 15px;
-    letter-spacing: 0.45px;
-    text-align: center;
-    line-height: 30px;
-}
-.catalogue-dw{
-    margin: 0 auto;
-    width: 344px;
-    padding: 19px 64px;
-    background: #D1D1D1;
-    border-radius: 40px;
-    margin-top: 40px;
-    color: #707070;
-    font-size: 18px;
-    letter-spacing: 1.8px;
-}
-.catalogue-dw:hover{
     color: #fff;
-    background: #918F89;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    position: absolute;
+    top: 192px;
+    left: 228px;
 }
-/* ⑤お問い合わせ */
+
+/* ②お問い合わせ */
 .form-part{
     margin-bottom: 240px;
     height: 464px;
 }
 .form-part h2{
     font-size: 24px;
+    font-weight: normal;
     letter-spacing: 2.4px;
-    margin-bottom: 47px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.form-part p{
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    margin-bottom: 72px;
     text-align: center;
 }
 .form-part form{
@@ -297,25 +215,7 @@ input[type="submit"]:hover{
     color: #fff;
     background: #918F89;
 }
-/* ⑥リクルート  */
-.recruit-part{
-    margin-bottom: 320px;
-    height: 192px;
-}
-.recruit-part h2{
-    margin-bottom: 48px;
-    text-align: center;
-    font-size: 24px;
-    letter-spacing: 2.4px;
-}
-.recruit-part p{
-    margin-bottom: 39px;
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 0.45px;
-    line-height: 30px;
-}
-/* ⑦フッター */
+/* ③フッター */
 footer{
     height: 240px;
     background: #918F89;

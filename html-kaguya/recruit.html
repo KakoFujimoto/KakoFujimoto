@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="stylesheet-recruit.css">
+    <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
     <title>RECRUIT</title>
 </head>    
 <!-- これはリクルートのページです -->
@@ -26,11 +27,11 @@
         <!-- ②採用情報 -->
         <section class="recruit-information">
             <h2>採用情報</h2>
-            <table>
+            <table class="recruit-table">
                 <tr>
                     <td rowspan="3" class="job-type">販売員</td>
-                    <td>仕事内容
-                        <ul>
+                    <td><span>仕事内容</span>
+                        <ul class="clerk-job-details">
                             <li>海外から輸入している家具の販売</li>
                             <li>商品管理</li>
                             <li>オーダーメイド家具の発注</li>
@@ -38,20 +39,20 @@
                     </td> 
                 </tr>
                 <tr>
-                    <td>時給<br>
+                    <td><span>時給</span><br>
                         1,200円〜
                     </td>
                 </tr>
                 <tr>
-                    <td>勤務時間<br>
+                    <td><span>勤務時間</span><br>
                         10:00&nbsp;-&nbsp;19:00<br>
                         週3〜5日
                     </td>
                 </tr>
                 <tr>
                     <td rowspan="3" class="job-type">家具職人</td>
-                    <td>仕事内容<br>
-                        <ul>
+                    <td><span>仕事内容</span>
+                        <ul class="clerk-job-details">
                             <li>家具作成に必要な材料の発注</li>
                             <li>商品管理</li>
                             <li>オーダーメイド家具の相談</li>
@@ -61,12 +62,12 @@
                     </td> 
                 </tr>
                 <tr>
-                    <td>月給<br>
+                    <td><span>月給</span><br>
                     35万円〜
                     </td>
                 </tr>
                 <tr>
-                    <td>勤務時間
+                    <td><span>勤務時間</span><br>
                     10:00&nbsp;-&nbsp;19:00<br>
                     週3〜5日
                     </td>
@@ -76,12 +77,12 @@
     </main>
     <!-- ③フッター -->
     <footer>
+        <img src="images/logo_footer@2x.png" class="site-logo" alt="家具屋のアイコン">
         <nav>
             <ul>
-                <li><img src="images/logo_footer.png" alt="家具屋のアイコン"></li>
-                <li><a href="top.html">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="news.html">NEWS</a></li>
-                <li><a href="#">RECRUIT</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
