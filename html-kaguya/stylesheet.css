@@ -96,83 +96,215 @@ a{
     text-decoration: none;
     color: #3B3B3B;
 }
-header{
-    margin: 16px 96px 0 96px;
-    height: 56px;
-    background: url(images/logo_header@2x.png) no-repeat;
-    background-size: 50px 31px;
+/* ======= 携帯用メディアクエリ（ページ全体） ====== */
+@media (max-width: 375px){
+    body{
+        width: 375px;
+        border: 1px solid blue;
+    }
 }
-header a{
+/* ====== ここからheader ====== */
+/* ====== PC用メディアクエリ ======= */
+@media (min-width: 1280px){
+    header{
+        margin: 16px 96px 0 96px;
+        height: 56px;
+        background: url(images/logo_header@2x.png) no-repeat;
+        background-size: 50px 31px;
+    }
+    header a{
     color: #B2B2B2;
     text-decoration: none;
+    }
+    header a:hover{
+        color: #3B3B3B;
+        text-decoration: none;
+    }
+    header ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    header span{
+        color: #3B3B3B;
+    }
+    nav li{
+        margin: 26px 0 0 56px;
+    }
+    .header-logo{
+        width: 38px;
+        height: 24px;
+    }
+    .none-pc01{
+        display: none;
+    }
 }
-header a:hover{
-    color: #3B3B3B;
-    text-decoration: none;
+/* ======= 携帯用メディアクエリ（header） ====== */
+@media (max-width: 375px){
+    .none-mobile01{
+        display: none;
+    }
+    .none-pc01{
+        height: 56px;
+        background: #918F89;
+        position: relative;
+    }
+    .mobile-header-logo{
+        width: 39px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 175px;
+    }
 }
-header ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-header span{
-    color: #3B3B3B;
-}
-nav li{
-    margin: 26px 0 0 56px;
-}
-.header-logo{
-    width: 38px;
-    height: 24px;
-}
+
+
 /* ①メイン画像 */
-.main-message{
-    background: url(images/imgB.png) no-repeat;
-    background-size: 100% 100%;
-    height: 744px;
-    margin-bottom: 80px;
-    position: relative;
+/* ====== PC用メディアクエリ ======= */
+@media (min-width: 1280px){
+    .main-message{
+        background: url(images/imgB.png) no-repeat;
+        background-size: 100% 100%;
+        height: 744px;
+        margin-bottom: 80px;
+        position: relative;
+    }
+    .main-message h1{
+        color: #918F89;
+        font-size: 53px;
+        font-weight: normal;
+        width: 609px;
+        height: 137px;
+        background-color: #fff;
+        opacity: 0.8;
+        padding: 32px 32px 32px 88px;
+        position: absolute;
+        top: 306px;
+    }
+    .none-pc02 , .none-pc03 , .none-pc04{
+        display: none;
+    }
 }
-.main-message h1{
-    color: #918F89;
-    font-size: 53px;
-    font-weight: normal;
-    width: 609px;
-    height: 137px;
-    background-color: #fff;
-    opacity: 0.8;
-    padding: 32px 32px 32px 88px;
-    position: absolute;
-    top: 306px;
+
+/* ======= 携帯用メディアクエリ（メイン画像） ====== */
+@media (max-width: 375px){
+    .none-mobile02{
+        display: none;
+    }
+    .main-message{
+        background: url(images/home_top_sp.png) no-repeat;
+        height: 744px;
+        margin-bottom: 88px;
+    }
+    .none-pc02{
+        width: 136px;
+        height: 80px;
+        color: #918F89;
+        font-size: 39px;
+        letter-spacing: 1.95px;
+        font-weight: normal;
+        background-color: #fff;
+        opacity: 0.6;
+        position: absolute;
+        top: 256px;
+        left: 0px;
+        padding: 16px 16px 16px 54px;
+    }
+    .none-pc03{
+        width: 240px;
+        height: 80px;
+        color: #918F89;
+        font-size: 39px;
+        letter-spacing: 1.95px;
+        font-weight: normal;
+        background-color: #fff;
+        opacity: 0.6;
+        position: absolute;
+        top: 352px;
+        left: 0px;
+        padding: 16px 16px 16px 54px;
+    }
+    .none-pc04{
+        width: 184px;
+        height: 80px;
+        color: #918F89;
+        font-size: 39px;
+        font-weight: normal;
+        background-color: #fff;
+        opacity: 0.6;
+        position: absolute;
+        top: 448px;
+        left: 0px;
+        padding: 16px 16px 16px 54px;
+    }
 }
+
+
 /* ②暮らしを提案する */
-.our-proposal{
-    margin-left: 8%;
-    height: 560px;
-    background: url(images/imgA.png) no-repeat left 88px top 0;
-    background-size: 560px 560px;
-    margin-bottom: 240px;
-    position: relative;
+@media (min-width: 1280px){
+    .our-proposal{
+        margin-left: 8%;
+        height: 560px;
+        background: url(images/imgA.png) no-repeat left 88px top 0;
+        background-size: 560px 560px;
+        margin-bottom: 240px;
+        position: relative;
+    }
+    .our-proposal h2{
+        margin-left: 6%;
+        font-size: 23px;
+        font-weight: normal;
+        letter-spacing: 2.5px;
+        position: absolute;
+        top: 240px;
+        left: 704px;
+    }
+    .our-proposal p{
+        margin-left: 6%;
+        font-size: 12px;
+        position: absolute;
+        top: 336px;
+        left: 704px;
+        line-height: 30px;
+        letter-spacing: 0.36px;
+    }
+    .our-proposal-none-pc , .mobile-chair-img{
+        display: none;
+    }
 }
-.our-proposal h2{
-    margin-left: 6%;
-    font-size: 23px;
-    font-weight: normal;
-    letter-spacing: 2.5px;
-    position: absolute;
-    top: 240px;
-    left: 704px;
-}
-.our-proposal p{
-    margin-left: 6%;
-    font-size: 12px;
-    position: absolute;
-    top: 336px;
-    left: 704px;
-    line-height: 30px;
-    letter-spacing: 0.36px;
+/* ======= 携帯用メディアクエリ（暮らしを提案する） ====== */
+@media (max-width: 375px){
+    .our-proposal h2{
+        text-align: center;
+        font-size: 21px;
+        letter-spacing: 2.1px;
+        font-weight: normal;
+    }
+    .our-proposal-none-pc{
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        letter-spacing: 0.42px;
+        line-height: 35px;
+    }
+    .mobile-chair-img{
+        margin: 0 23px 240px 24px;
+        width: 328px;
+        height: 264px;
+    }
+    .our-proposal-none-mobile{
+        display: none;
+    }
 }
 /* ③NEWS */
+@media (min-width: 1280px){
+    .img-container{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 56px 65px;
+    }
+}
 .new-items{
     height: 456px;
     margin-bottom: 240px;
@@ -183,11 +315,7 @@ nav li{
     text-align: center;
     margin-bottom: 48px;
 }
-.img-container{
-    display: flex;
-    justify-content: center;
-    margin: 0 0 56px 65px;
-}
+
 .img-container img{
     height: 320px;
     width: 320px;
@@ -215,87 +343,162 @@ figcaption{
     font-size: 11px;
     color: #B2B2B2;
 }
-/* ④公式カタログ */
-.catalogue{
-    height: 180px;
-    margin-bottom: 240px;
+/* ======= 携帯用メディアクエリ（NEWS） ====== */
+@media (max-width: 375px){
+    .new-items{
+        height: 976px;
+    }
+    .img-container{
+        display: flex;
+        flex-flow: column;
+        margin: 0 51.5px;
+    }
+    .furniture-img{
+        width: 272px;
+        height: 272px;
+        margin-bottom: 24px;
+    }
+    .furniture-img img{
+        width: 272px;
+        height: 272px;
+    }
 }
-.catalogue h2{
-    font-size: 24px;
-    letter-spacing: 2.4px;
-    text-align: center;
-    margin-bottom: 48px;
+    /* ④公式カタログ */
+    @media (min-width: 1280px){
+        .catalogue-mobile-view{
+            display: none;
+        }
+    }
+    .catalogue{
+        height: 180px;
+        margin-bottom: 240px;
+    }
+    .catalogue h2{
+        font-size: 24px;
+        letter-spacing: 2.4px;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    .catalogue p{
+        font-size: 15px;
+        letter-spacing: 0.45px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .catalogue-dw{
+        margin: 0 auto;
+        width: 344px;
+        padding: 19px 64px;
+        background: #D1D1D1;
+        border-radius: 40px;
+        margin-top: 40px;
+        color: #707070;
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
+    .catalogue-dw:hover{
+        color: #fff;
+        background: #918F89;
+    }
+    /* ======= 携帯用メディアクエリ（CONTACT） ====== */
+    @media (max-width: 375px){
+        .catalogue-pcview{
+            display: none;
+        }
+    }
+    /* ⑤お問い合わせ */
+    @media (min-width: 1280px){
+        .mobile-submit{
+            display: none;
+        }
+    }  
+    .form-part{
+        margin-bottom: 240px;
+        height: 464px;
+    }
+    .form-part h2{
+        font-size: 24px;
+        letter-spacing: 2.4px;
+        margin-bottom: 47px;
+        text-align: center;
+    }
+    .form-part form{
+        text-align: center;
+    }
+    input[type="text"],
+    input[type="email"]{
+        padding-left: 16px;
+        margin-bottom: 34px;
+        width: 454px;
+        height: 32px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;  
+    }
+    textarea{
+        padding: 10px 0 0 16px;
+        margin-bottom: 47px;
+        resize: none;
+        width: 454px;
+        height: 200px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;
+    }
+    input[type="submit"]{
+        text-align: center;
+        width: 161px;
+        height: 32px;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        color: #707070;
+        background: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;  
+    }
+    input[type="submit"]:hover{
+        color: #fff;
+        background: #918F89;
+    }
+/* ======= 携帯用メディアクエリ（NEWS） ====== */
+@media (max-width: 375px){
+    input[type="text"],
+    input[type="email"]{
+        padding-left: 17px;
+        margin-bottom: 16px;
+        width: 286px;
+        height: 32px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;  
+    }
+    textarea{
+        padding: 15px 0 0 17px;
+        margin-bottom: 32px;
+        resize: none;
+        width: 286px;
+        height: 160px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;
+    }
+    input[type="submit"]{
+        text-align: center;
+        width: 173px;
+        height: 48px;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        color: #707070;
+        background: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;  
+    }
+    .pc-submit{
+        display: none;
+    }
 }
-.catalogue p{
-    font-size: 15px;
-    letter-spacing: 0.45px;
-    text-align: center;
-    line-height: 30px;
-}
-.catalogue-dw{
-    margin: 0 auto;
-    width: 344px;
-    padding: 19px 64px;
-    background: #D1D1D1;
-    border-radius: 40px;
-    margin-top: 40px;
-    color: #707070;
-    font-size: 18px;
-    letter-spacing: 1.8px;
-}
-.catalogue-dw:hover{
-    color: #fff;
-    background: #918F89;
-}
-/* ⑤お問い合わせ */
-.form-part{
-    margin-bottom: 240px;
-    height: 464px;
-}
-.form-part h2{
-    font-size: 24px;
-    letter-spacing: 2.4px;
-    margin-bottom: 47px;
-    text-align: center;
-}
-.form-part form{
-    text-align: center;
-}
-input[type="text"],
-input[type="email"]{
-    padding-left: 16px;
-    margin-bottom: 34px;
-    width: 454px;
-    height: 32px;
-    color: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;  
-}
-textarea{
-    padding: 10px 0 0 16px;
-    margin-bottom: 47px;
-    resize: none;
-    width: 454px;
-    height: 200px;
-    color: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;
-}
-input[type="submit"]{
-    text-align: center;
-    width: 161px;
-    height: 32px;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    color: #707070;
-    background: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;  
-}
-input[type="submit"]:hover{
-    color: #fff;
-    background: #918F89;
-}
+
+
 /* ⑥リクルート  */
 .recruit-part{
     margin-bottom: 320px;
