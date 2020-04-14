@@ -154,11 +154,9 @@ a{
         height: 24px;
         position: absolute;
         top: 18px;
-        left: 175px;
+        left: 170px;
     }
 }
-
-
 /* ①メイン画像 */
 /* ====== PC用メディアクエリ ======= */
 @media (min-width: 1280px){
@@ -405,6 +403,15 @@ figcaption{
         .catalogue-pcview{
             display: none;
         }
+        .catalogue-dw{
+            width: 280px;
+            height: 56px;
+            font-size: 18px;
+            letter-spacing: 1.8px;
+            padding: 14px 32px;
+            text-align: center;
+            vertical-align: middle;
+        }
     }
     /* ⑤お問い合わせ */
     @media (min-width: 1280px){
@@ -517,6 +524,12 @@ figcaption{
     letter-spacing: 0.45px;
     line-height: 30px;
 }
+/* ======= 携帯用メディアクエリ（リクルート） ====== */
+@media (max-width: 375px){
+    .more-info-mobile{
+        font-size: 18px;
+    }
+}
 /* ⑦フッター */
 footer{
     height: 240px;
@@ -546,4 +559,24 @@ footer p{
     padding-bottom: 14px;
     text-align: center;
     background: #918F89;
+}
+@media (max-width: 375px){
+    footer{
+        height: 232px;
+        position: relative;
+    }
+    .site-logo{
+        position: absolute;
+        top: 72px;
+        left: 155px;
+    }
+    footer nav{
+        display: none;
+    }
+    small{
+        position: absolute;
+        top: 186px;
+        left: 140px;   
+        margin-bottom: 32px;
+    }
 }
