@@ -100,7 +100,6 @@ a{
 @media (max-width: 375px){
     body{
         width: 375px;
-        border: 1px solid blue;
     }
 }
 /* ====== ここからheader ====== */
@@ -155,6 +154,13 @@ a{
         position: absolute;
         top: 18px;
         left: 170px;
+    }
+    .fas{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: 14px;
+        right: 19px;
     }
 }
 /* ①メイン画像 */
@@ -569,11 +575,14 @@ footer p{
         position: absolute;
         top: 72px;
         left: 155px;
+        width: 51.69px;
+        height: 32px;
     }
     footer nav{
         display: none;
     }
     small{
+        font-size: 10px;
         position: absolute;
         top: 186px;
         left: 140px;   
