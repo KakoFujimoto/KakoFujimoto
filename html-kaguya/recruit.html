@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-sclale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet-recruit.css">
     <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
     <title>RECRUIT</title>
@@ -11,12 +12,16 @@
     <header>
         <!-- HTML/CSSのアイコンは背景で指定します -->
         <nav>
-            <ul>
+            <ul class="none-mobile01">
                 <li><a href="top.html">HOME</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="#"><span>RECRUIT</span></a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
+            <!-- これはモバイル用のヘッダーです -->
+            <div class="none-pc01">
+                <img class="mobile-header-logo" src="images/logo_footer@2x.png" alt="家具屋サイトメニューへ">
+            </div>
         </nav>
     </header>
     <main>
@@ -30,7 +35,7 @@
             <table>
                 <tr>
                     <td rowspan="3" class="job-type">販売員</td>
-                    <td><span>仕事内容</span>
+                    <td class="job-details"><span>仕事内容</span>
                         <ul class="clerk-job-details">
                             <li>海外から輸入している家具の販売</li>
                             <li>商品管理</li>
@@ -39,19 +44,19 @@
                     </td> 
                 </tr>
                 <tr>
-                    <td><span>時給</span><br>
+                    <td class="job-details"><span>時給</span><br>
                         1,200円〜
                     </td>
                 </tr>
                 <tr>
-                    <td><span>勤務時間</span><br>
+                    <td class="job-details"><span>勤務時間</span><br>
                         10:00&nbsp;-&nbsp;19:00<br>
                         週3〜5日
                     </td>
                 </tr>
                 <tr>
                     <td rowspan="3" class="job-type">家具職人</td>
-                    <td><span>仕事内容</span>
+                    <td class="job-details"><span>仕事内容</span>
                         <ul class="clerk-job-details">
                             <li>家具作成に必要な材料の発注</li>
                             <li>商品管理</li>
@@ -62,12 +67,12 @@
                     </td> 
                 </tr>
                 <tr>
-                    <td><span>月給</span><br>
+                    <td class="job-details"><span>月給</span><br>
                     35万円〜
                     </td>
                 </tr>
                 <tr>
-                    <td><span>勤務時間</span><br>
+                    <td class="job-details"><span>勤務時間</span><br>
                     10:00&nbsp;-&nbsp;19:00<br>
                     週3〜5日
                     </td>
