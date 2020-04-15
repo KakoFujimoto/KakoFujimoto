@@ -109,70 +109,131 @@ a{
     text-decoration: none;
     color: #3B3B3B;
 }
-header{
-    margin: 16px 96px 0 96px;
-    height: 56px;
-    background: url(images/logo_header@2x.png) no-repeat;
-    background-size: 50px 31px;
+/* ======= 携帯用メディアクエリ（ページ全体） ====== */
+@media (max-width: 375px){
+    body{
+        width: 375px;
+    }
 }
-header a{
+/* ====== ここからheader ====== */
+/* ====== PC用メディアクエリ ======= */
+@media (min-width: 376px){
+    header{
+        margin: 16px 96px 0 96px;
+        height: 56px;
+        background: url(images/logo_header@2x.png) no-repeat;
+        background-size: 50px 31px;
+    }
+    header a{
     color: #B2B2B2;
     text-decoration: none;
+    }
+    header a:hover{
+        color: #3B3B3B;
+        text-decoration: none;
+    }
+    header ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    header span{
+        color: #3B3B3B;
+    }
+    nav li{
+        margin: 26px 0 0 56px;
+    }
+    .header-logo{
+        width: 38px;
+        height: 24px;
+    }
+    .none-pc01{
+        display: none;
+    }
 }
-header a:hover{
-    color: #3B3B3B;
-    text-decoration: none;
-}
-header ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-header span{
-    color: #3B3B3B;
-    font-size: 16px;
-}
-nav li{
-    margin: 26px 0 0 56px;
-}
-.header-logo{
-    width: 38px;
-    height: 24px;
+/* ======= 携帯用メディアクエリ（header） ====== */
+@media (max-width: 375px){
+    .none-mobile01{
+        display: none;
+    }
+    .none-pc01{
+        height: 56px;
+        background: #918F89;
+        position: relative;
+    }
+    .mobile-header-logo{
+        width: 39px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 170px;
+    }
+    .fas{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: 14px;
+        right: 19px;
+    }
 }
 /* ①メイン画像 */
-.main-message{
-    background: url(images/imgG.png) no-repeat;
-    background-size: 100% 100%;
-    height: 456px;
-    margin-bottom: 160px;
-    position: relative;
+@media (min-width: 376px){
+    .main-message{
+        background: url(images/imgG.png) no-repeat;
+        background-size: 100% 100%;
+        height: 456px;
+        margin-bottom: 160px;
+        position: relative;
+    }
+    .main-message h1{
+        color: #918F89;
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-weight: normal;
+        position: absolute;
+        top: 191px;
+        left: 
+        228px;
+    }
 }
-.main-message h1{
-    color: #918F89;
-    font-size: 30px;
-    letter-spacing: 3px;
-    font-weight: normal;
-    position: absolute;
-    top: 191px;
-    left: 228px;
+/* ======= 携帯用メディアクエリ（メイン画像） ====== */
+@media (max-width: 375px){
+    .main-message{
+        background: url(images/news_top_sp.png) no-repeat;
+        background-size: 100% 100%;
+        height: 648px;
+        position: relative;
+        margin-bottom: 160px;
+    }
+    .main-message h1{
+        color: #3B3B3B;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        font-weight: normal;
+        position: absolute;
+        top: 200px;
+        left: 148.5px;
+    }
 }
-/* ②入荷情報 */
+/* ③NEWS */
+@media (min-width: 376px){
+    .img-container{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 56px 65px;
+    }
+}
 .coming-items{
-    height: 400px;
-    margin-bottom: 320px;
+    height: 456px;
+    margin-bottom: 240px;
 }
 .coming-items h2{
     font-size: 23px;
     letter-spacing: 2.3px;
-    font-weight: normal;
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 48px;
 }
-.img-container{
-    display: flex;
-    justify-content: center;
-    margin: 0 0 56px 65px;
-}
+
 .img-container img{
     height: 320px;
     width: 320px;
@@ -191,13 +252,48 @@ figcaption{
     top: 144px;
     left: 47px;
 }
-.new-items p{
+.coming-items p{
     text-align: center;
     letter-spacing: 0.43px;
 }
-span{
+.fa{
+    padding-left: 7px;
     font-size: 11px;
-    color: #918F89;
+    color: #B2B2B2;
+}
+/* ======= 携帯用メディアクエリ（NEWS） ====== */
+@media (max-width: 375px){
+    .coming-items{
+        height: 976px;
+    }
+    .img-container{
+        display: flex;
+        flex-flow: column;
+        margin: 0 51.5px;
+    }
+    .furniture-img{
+        position: relative;
+        width: 272px;
+        height: 272px;
+        margin-bottom: 24px;
+    }
+    .furniture-img img{
+        width: 272px;
+        height: 272px;
+    }
+    .coming-items h2{
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        color: #3B3B3B;
+        margin-bottom: 24px;
+    }
+    figcaption{
+        font-size: 15px;
+        position: absolute;
+        top: 122px;
+        left: 36.5px;
+    }
 }
 /* ③フッター */
 footer{
@@ -228,4 +324,27 @@ footer p{
     padding-bottom: 14px;
     text-align: center;
     background: #918F89;
+}
+@media (max-width: 375px){
+    footer{
+        height: 232px;
+        position: relative;
+    }
+    .site-logo{
+        position: absolute;
+        top: 72px;
+        left: 155px;
+        width: 51.69px;
+        height: 32px;
+    }
+    footer nav{
+        display: none;
+    }
+    small{
+        font-size: 10px;
+        position: absolute;
+        top: 186px;
+        left: 145px;   
+        margin-bottom: 32px;
+    }
 }
