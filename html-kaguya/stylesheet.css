@@ -355,6 +355,7 @@ figcaption{
         margin: 0 51.5px;
     }
     .furniture-img{
+        position: relative;
         width: 272px;
         height: 272px;
         margin-bottom: 24px;
@@ -364,7 +365,13 @@ figcaption{
         height: 272px;
     }
     .new-items h2{
-    margin-bottom: 24px;
+        margin-bottom: 24px;
+    }
+    figcaption{
+        font-size: 15px;
+        position: absolute;
+        top: 122px;
+        left: 36.5px;
     }
 }
     /* ④公式カタログ */
