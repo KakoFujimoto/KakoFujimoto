@@ -101,7 +101,7 @@ a{
 }
 /* ====== ここからheader ====== */
 /* ====== PC用メディアクエリ ======= */
-@media (min-width: 1280px){
+@media (min-width: 376px){
     header{
         margin: 16px 96px 0 96px;
         height: 56px;
@@ -162,7 +162,7 @@ a{
 }
 /* ①メイン画像 */
 /* ====== PC用メディアクエリ ======= */
-@media (min-width: 1280px){
+@media (min-width: 376px){
     .main-message{
         background: url(images/imgB.png) no-repeat;
         background-size: 100% 100%;
@@ -242,7 +242,7 @@ a{
 
 
 /* ②暮らしを提案する */
-@media (min-width: 1280px){
+@media (min-width: 376px){
     .our-proposal{
         margin-left: 8%;
         height: 560px;
@@ -299,7 +299,7 @@ a{
     }
 }
 /* ③NEWS */
-@media (min-width: 1280px){
+@media (min-width: 376px){
     .img-container{
         display: flex;
         justify-content: center;
@@ -363,9 +363,12 @@ figcaption{
         width: 272px;
         height: 272px;
     }
+    .new-items h2{
+    margin-bottom: 24px;
+    }
 }
     /* ④公式カタログ */
-    @media (min-width: 1280px){
+    @media (min-width: 376px){
         .catalogue-mobile-view{
             display: none;
         }
@@ -417,7 +420,7 @@ figcaption{
         }
     }
     /* ⑤お問い合わせ */
-    @media (min-width: 1280px){
+    @media (min-width: 376px){
         .mobile-submit{
             display: none;
         }
