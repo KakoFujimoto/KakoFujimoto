@@ -411,7 +411,7 @@ figcaption{
         color: #fff;
         background: #918F89;
     }
-    /* ======= 携帯用メディアクエリ（CONTACT） ====== */
+    /* ======= 携帯用メディアクエリ（カタログ） ====== */
     @media (max-width: 375px){
         .catalogue-pcview{
             display: none;
@@ -480,7 +480,7 @@ figcaption{
         color: #fff;
         background: #918F89;
     }
-/* ======= 携帯用メディアクエリ（NEWS） ====== */
+/* ======= 携帯用メディアクエリ（CONTACT） ====== */
 @media (max-width: 375px){
     input[type="text"],
     input[type="email"]{

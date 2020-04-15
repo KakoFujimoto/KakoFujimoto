@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-sclale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet-contact.css">
     <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
     <title>CONTACT</title>
@@ -11,12 +12,16 @@
     <header>
         <!-- HTML/CSSのアイコンは背景で指定します -->
         <nav>
-            <ul>
+            <ul class="none-mobile01">
                 <li><a href="top.html">HOME</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="recruit.html">RECRUIT</a></li>
                 <li><a href="#"><span>CONTACT</span></a></li>
             </ul>
+            <!-- これはモバイル用のヘッダーです -->
+            <div class="none-pc01">
+                <img class="mobile-header-logo" src="images/logo_footer@2x.png" alt="家具屋サイトメニューへ">
+            </div>
         </nav>
     </header>
     <main>
@@ -26,13 +31,19 @@
         </section>
         <!-- ②お問い合わせ -->
         <section class="form-part">
-            <h2>お問い合わせ</h2>
+            <h2 class="pc-contact-sub">お問い合わせ</h2>
+            <!-- これはモバイル用の見出しです -->
+                <h2 class="mobile-contact-sub">CONTACT</h2>
+            <!-- ここまで -->
             <p>オーダー家具や在庫状況のお問い合わせは下記フォームから承っております。</p>
             <form action="#" method="POST">
                 <input type="text" name="name" id="name-field" placeholder="お名前"><br>
                 <input type="email" name="email" id="email-field" placeholder="メールアドレス"><br>
-                <textarea name="comment" id="comment" placeholder="お問い合わせ内容"></textarea><br>
-                <input type="submit" value="SEND">
+                <textarea name="comment" placeholder="お問い合わせ内容">お問い合わせ内容</textarea><br>
+                <input class="pc-submit" type="submit" value="SEND">
+                <!-- ここからモバイル用のSendボタンです -->
+                    <input class="mobile-submit" type="submit" value="Send">
+                <!-- ここまで -->
             </form>
         </section>
     </main>
@@ -41,13 +52,14 @@
         <img src="images/logo_footer@2x.png" class="site-logo" alt="家具屋のアイコン">
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="top.html">HOME</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="recruit.html">RECRUIT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
-</body>
-</html>
+    </body>
+    
+    </html>

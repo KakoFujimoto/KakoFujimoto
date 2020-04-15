@@ -110,62 +110,124 @@ a{
     text-decoration: none;
     color: #3B3B3B;
 }
-header{
-    margin: 16px 96px 0 96px;
-    height: 56px;
-    background: url(images/logo_header@2x.png) no-repeat;
-    background-size: 50px 31px;
+/* ======= 携帯用メディアクエリ（ページ全体） ====== */
+@media (max-width: 375px){
+    body{
+        width: 375px;
+    }
 }
-header a{
+/* ====== ここからheader ====== */
+/* ====== PC用メディアクエリ ======= */
+@media (min-width: 376px){
+    header{
+        margin: 16px 96px 0 96px;
+        height: 56px;
+        background: url(images/logo_header@2x.png) no-repeat;
+        background-size: 50px 31px;
+    }
+    header a{
     color: #B2B2B2;
     text-decoration: none;
+    }
+    header a:hover{
+        color: #3B3B3B;
+        text-decoration: none;
+    }
+    header ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    header span{
+        color: #3B3B3B;
+    }
+    nav li{
+        margin: 26px 0 0 56px;
+    }
+    .header-logo{
+        width: 38px;
+        height: 24px;
+    }
+    .none-pc01{
+        display: none;
+    }
 }
-header a:hover{
-    color: #3B3B3B;
-    text-decoration: none;
-}
-header ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
-header span{
-    color: #3B3B3B;
-}
-nav li{
-    margin: 26px 0 0 56px;
-}
-.header-logo{
-    width: 38px;
-    height: 24px;
+/* ======= 携帯用メディアクエリ（header） ====== */
+@media (max-width: 375px){
+    .none-mobile01{
+        display: none;
+    }
+    .none-pc01{
+        height: 56px;
+        background: #918F89;
+        position: relative;
+    }
+    .mobile-header-logo{
+        width: 39px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 170px;
+    }
+    .fas{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: 14px;
+        right: 19px;
+    }
 }
 /* ①メイン画像 */
-.main-message{
-    background: url(images/imgH.png) no-repeat;
-    background-size: 100% 100%;
-    height: 456px;
-    margin-bottom: 80px;
-    position: relative;
-    margin-bottom: 161px;
+@media (min-width: 376px){
+    .main-message{
+        background: url(images/imgH.png) no-repeat;
+        background-size: 100% 100%;
+        height: 456px;
+        margin-bottom: 80px;
+        position: relative;
+        margin-bottom: 161px;
+    }
+    .main-message h1{
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-weight: normal;
+        position: absolute;
+        top: 192px;
+        left: 228px;
+    }
 }
-.main-message h1{
-    color: #fff;
-    font-size: 30px;
-    letter-spacing: 3px;
-    font-weight: normal;
-    position: absolute;
-    top: 192px;
-    left: 228px;
+/* ======= 携帯用メディアクエリ（メイン画像） ====== */
+@media (max-width: 375px){
+    .main-message{
+        background: url(images/contact_top_sp.png) no-repeat;
+        background-size: 100% 100%;
+        height: 648px;
+        position: relative;
+        margin-bottom: 160px;
+    }
+    .main-message h1{
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        font-weight: normal;
+        position: absolute;
+        top: 229px;
+        left: 119px;
+    }
 }
-
 /* ②お問い合わせ */
+@media (min-width: 376px){
+    .mobile-submit ,.mobile-contact-sub{
+        display: none;
+    }
+}  
 .form-part{
     margin-bottom: 240px;
     height: 464px;
 }
 .form-part h2{
     font-size: 24px;
-    font-weight: normal;
     letter-spacing: 2.4px;
     margin-bottom: 40px;
     text-align: center;
@@ -187,7 +249,7 @@ input[type="email"]{
     height: 32px;
     color: #D1D1D1;
     border: 1px #D1D1D1 solid;
-    border-radius: 20px;  
+    border-radius: 20px;
 }
 textarea{
     padding: 10px 0 0 16px;
@@ -213,6 +275,49 @@ input[type="submit"]{
 input[type="submit"]:hover{
     color: #fff;
     background: #918F89;
+}
+input::placeholder {
+  color: #D1D1D1;
+}
+/* ======= 携帯用メディアクエリ（CONTACT） ====== */
+@media (max-width: 375px){
+    input[type="text"],
+    input[type="email"]{
+        padding-left: 17px;
+        margin-bottom: 16px;
+        width: 286px;
+        height: 32px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 10px;  
+    }
+    textarea{
+        padding: 15px 0 0 17px;
+        margin-bottom: 32px;
+        resize: none;
+        width: 286px;
+        height: 160px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 10px;
+    }
+    input[type="submit"]{
+        text-align: center;
+        width: 173px;
+        height: 48px;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        color: #707070;
+        background: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;  
+    }
+    .pc-submit , .pc-contact-sub{
+        display: none;
+    }
+    .form-part p{
+        display: none;
+    }
 }
 /* ③フッター */
 footer{
@@ -243,4 +348,27 @@ footer p{
     padding-bottom: 14px;
     text-align: center;
     background: #918F89;
+}
+@media (max-width: 375px){
+    footer{
+        height: 232px;
+        position: relative;
+    }
+    .site-logo{
+        position: absolute;
+        top: 72px;
+        left: 155px;
+        width: 51.69px;
+        height: 32px;
+    }
+    footer nav{
+        display: none;
+    }
+    small{
+        font-size: 10px;
+        position: absolute;
+        top: 186px;
+        left: 145px;   
+        margin-bottom: 32px;
+    }
 }
