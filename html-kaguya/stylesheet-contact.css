@@ -157,10 +157,14 @@ a{
     .none-mobile01{
         display: none;
     }
+    /* 携帯用のheaderはこちら */
     .none-pc01{
         height: 56px;
+        width: 375px;
         background: #918F89;
         position: relative;
+        position: fixed;
+        z-index: 2;
     }
     .mobile-header-logo{
         width: 39px;
@@ -205,6 +209,7 @@ a{
         height: 648px;
         position: relative;
         margin-bottom: 160px;
+        z-index: 1;
     }
     .main-message h1{
         color: #fff;

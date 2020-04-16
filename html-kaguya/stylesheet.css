@@ -140,10 +140,13 @@ a{
     .none-mobile01{
         display: none;
     }
+    /* 携帯用のheaderはこちら */
     .none-pc01{
         height: 56px;
+        width: 375px;
         background: #918F89;
         position: relative;
+        position: fixed;
     }
     .mobile-header-logo{
         width: 39px;
