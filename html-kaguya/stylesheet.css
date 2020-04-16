@@ -147,6 +147,7 @@ a{
         background: #918F89;
         position: relative;
         position: fixed;
+        z-index: 2;
     }
     .mobile-header-logo{
         width: 39px;
@@ -199,6 +200,7 @@ a{
         background: url(images/home_top_sp.png) no-repeat;
         height: 744px;
         margin-bottom: 88px;
+        z-index: 1;
     }
     .none-pc02{
         width: 136px;
