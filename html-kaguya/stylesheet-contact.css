@@ -283,9 +283,6 @@ input[type="submit"]:hover{
     color: #fff;
     background: #918F89;
 }
-input::placeholder {
-  color: #D1D1D1;
-}
 /* ======= 携帯用メディアクエリ（CONTACT） ====== */
 @media (max-width: 375px){
     input[type="text"],
@@ -325,7 +322,10 @@ input::placeholder {
     .form-part p{
         display: none;
     }
-    input::placeholder {
+    input{
+        color: #D1D1D1;
+    }
+    ::-webkit-input-placeholder{
     color: #D1D1D1;
     }
 }
