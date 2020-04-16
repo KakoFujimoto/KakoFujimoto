@@ -521,6 +521,9 @@ figcaption{
     .pc-submit{
         display: none;
     }
+    ::-webkit-input-placeholder{
+    color: #D1D1D1;
+    }
 }
 
 
