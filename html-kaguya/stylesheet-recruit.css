@@ -276,7 +276,7 @@ a{
     }
     .job-details{
         vertical-align: middle;
-        padding-left: 11px;
+        padding-left: 20px;
     }
     table li{
         list-style: none;
@@ -298,7 +298,7 @@ a{
         padding-bottom: 6px;
     }
     .job-type{
-        width: 76px;
+        width: 63px;
         font-size: 14px;
         padding: 0 auto;
         background: #d5d5d5;

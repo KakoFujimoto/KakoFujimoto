@@ -227,6 +227,8 @@ a{
     height: 464px;
 }
 .form-part h2{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
     font-size: 24px;
     letter-spacing: 2.4px;
     margin-bottom: 40px;
