@@ -1,0 +1,384 @@
+@charset "utf-8";
+/* ====== リセットcss ====== */
+* {
+  box-sizing: border-box;
+}
+​
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+​
+body {
+    line-height:1;
+}
+​
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+​
+nav ul {
+    list-style:none;
+}
+​
+blockquote, q {
+    quotes:none;
+}
+​
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+​
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+​
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+​
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+​
+del {
+    text-decoration: line-through;
+}
+​
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+​
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+​
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+​
+input, select {
+    vertical-align:middle;
+}
+/* ====== /リセットcss ====== */
+
+/* ここから本番のcss */
+body{
+    font-family: "Noto Sans", sans-serif;
+    color: #3B3B3B;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #3B3B3B;
+}
+/* ======= 携帯用メディアクエリ（ページ全体） ====== */
+@media (max-width: 375px){
+    body{
+        width: 375px;
+    }
+}
+/* ====== ここからheader ====== */
+/* ====== PC用メディアクエリ ======= */
+@media (min-width: 376px){
+    header{
+        margin: 16px 96px 0 96px;
+        height: 56px;
+        background: url(images/logo_header@2x.png) no-repeat;
+        background-size: 50px 31px;
+    }
+    header a{
+    color: #B2B2B2;
+    text-decoration: none;
+    }
+    header a:hover{
+        color: #3B3B3B;
+        text-decoration: none;
+    }
+    header ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    header span{
+        color: #3B3B3B;
+    }
+    nav li{
+        margin: 26px 0 0 56px;
+    }
+    .header-logo{
+        width: 38px;
+        height: 24px;
+    }
+    .none-pc01{
+        display: none;
+    }
+}
+/* ======= 携帯用メディアクエリ（header） ====== */
+@media (max-width: 375px){
+    .none-mobile01{
+        display: none;
+    }
+    /* 携帯用のheaderはこちら */
+    .none-pc01{
+        height: 56px;
+        width: 375px;
+        background: #918F89;
+        position: relative;
+        position: fixed;
+        z-index: 2;
+    }
+    .mobile-header-logo{
+        width: 39px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 170px;
+    }
+    .fas{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: 14px;
+        right: 19px;
+    }
+}
+/* ①メイン画像 */
+@media (min-width: 376px){
+    .main-message{
+        background: url(images/imgH.png) no-repeat;
+        background-size: 100% 100%;
+        height: 456px;
+        margin-bottom: 80px;
+        position: relative;
+        margin-bottom: 161px;
+    }
+    .main-message h1{
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-weight: normal;
+        position: absolute;
+        top: 192px;
+        left: 228px;
+    }
+}
+/* ======= 携帯用メディアクエリ（メイン画像） ====== */
+@media (max-width: 375px){
+    .main-message{
+        background: url(images/contact_top_sp.png) no-repeat;
+        background-size: 100% 100%;
+        height: 648px;
+        position: relative;
+        margin-bottom: 160px;
+        z-index: 1;
+    }
+    .main-message h1{
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        font-weight: normal;
+        position: absolute;
+        top: 229px;
+        left: 119px;
+    }
+}
+/* ②お問い合わせ */
+@media (min-width: 376px){
+    .mobile-submit ,.mobile-contact-sub{
+        display: none;
+    }
+}  
+.form-part{
+    margin-bottom: 240px;
+    height: 464px;
+}
+.form-part h2{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.form-part p{
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    margin-bottom: 72px;
+    text-align: center;
+}
+.form-part form{
+    text-align: center;
+}
+input[type="text"],
+input[type="email"]{
+    padding-left: 16px;
+    margin-bottom: 34px;
+    width: 454px;
+    height: 32px;
+    color: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;
+}
+textarea{
+    padding: 10px 0 0 16px;
+    margin-bottom: 47px;
+    resize: none;
+    width: 454px;
+    height: 200px;
+    color: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;
+}
+input[type="submit"]{
+    text-align: center;
+    width: 161px;
+    height: 32px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    color: #707070;
+    background: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;  
+}
+input[type="submit"]:hover{
+    color: #fff;
+    background: #918F89;
+}
+/* ======= 携帯用メディアクエリ（CONTACT） ====== */
+@media (max-width: 375px){
+    input[type="text"],
+    input[type="email"]{
+        padding-left: 17px;
+        margin-bottom: 16px;
+        width: 286px;
+        height: 32px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 10px;  
+    }
+    textarea{
+        padding: 15px 0 0 17px;
+        margin-bottom: 32px;
+        resize: none;
+        width: 286px;
+        height: 160px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 10px;
+    }
+    input[type="submit"]{
+        text-align: center;
+        width: 173px;
+        height: 48px;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        color: #707070;
+        background: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;  
+    }
+    .pc-submit , .pc-contact-sub{
+        display: none;
+    }
+    .form-part p{
+        display: none;
+    }
+    input{
+        color: #D1D1D1;
+    }
+    ::-webkit-input-placeholder{
+    color: #D1D1D1;
+    }
+}
+/* ③フッター */
+footer{
+    height: 240px;
+    background: #918F89;
+    color: #fff;
+    position: relative;
+}
+footer a{
+    color: #fff;
+}
+footer ul{
+    padding: 100px 224px 51px 623px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    background: #918F89;
+}
+.site-logo{
+    width: 64px;
+    height: 40px;
+    position: absolute;
+    left: 224px;
+    top: 120px;
+}
+footer p{
+    font-size: 13px;
+    padding-bottom: 14px;
+    text-align: center;
+    background: #918F89;
+}
+@media (max-width: 375px){
+    footer{
+        height: 232px;
+        position: relative;
+    }
+    .site-logo{
+        position: absolute;
+        top: 72px;
+        left: 155px;
+        width: 51.69px;
+        height: 32px;
+    }
+    footer nav{
+        display: none;
+    }
+    small{
+        font-size: 10px;
+        position: absolute;
+        top: 186px;
+        left: 145px;   
+        margin-bottom: 32px;
+    }
+}

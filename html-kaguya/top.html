@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-sclale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <title>We propose a life.</title>
+</head>
+<body>
+    <header>
+        <!-- HTML/CSSのアイコンは背景で指定します -->
+        <nav>
+            <ul class="none-mobile01">
+                <li><a href="#"><span>HOME</span></a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <!-- これはモバイル用のヘッダーです -->
+            <div class="none-pc01">
+                <img class="mobile-header-logo" src="images/logo_footer@2x.png" alt="家具屋サイトメニューへ">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- ①メイン画像 -->
+        <section class="main-message">
+            <h1 class="none-mobile02">We propose a life.</h1>
+            <!-- これはモバイル用のメインメッセージです -->
+            <div class="none-pc02">We</div>
+            <div class="none-pc03">propose</div>
+            <div class="none-pc04">a life.</div>
+            <!-- ここまで -->
+        </section>
+        <!-- ②暮らしを提案する -->
+        <section class="our-proposal">
+            <h2>暮らしを提案する。</h2>
+            <p class="our-proposal-none-mobile">私たちは、家具を売るのではなく、お客様の理想とする<br>
+                「暮らし」を提案します。<br>
+                仕事で疲れた後に帰りたくなる、<br>
+                今日も１日頑張ろうと思える、<br>
+                そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。
+            </p>
+            <!-- ここからモバイル用の表示です -->
+            <p class="our-proposal-none-pc">私たちは、家具を売るのではなく、<br>
+                お客様の理想とする<br>
+                「暮らし」を提案します。<br>
+                仕事で疲れた後に帰りたくなる、<br>
+                今日も１日頑張ろうと思える、<br>
+                そんな空間をお客様と一緒に作り上げていくのが<br>
+                私たちの仕事です。
+            </p>
+            <img class="mobile-chair-img" src="images/imgA.png" alt="アースカラーのチェアー">
+            <!-- ここまで -->
+        </section>
+        <!-- ③NEWS -->
+        <section class="new-items">
+            <h2>NEWS</h2>
+            <div class="img-container">
+                <figure class="furniture-img">
+                    <img src="images/imgD.png" alt="少しくすんだ青色のカウチです">
+                    <figcaption>
+                        アームストロングのカウチ入荷
+                    </figcaption>
+                </figure>
+                <figure class="furniture-img">
+                    <img src="images/imgE.png" alt="真っ赤な独り掛けのチェアです">
+                    <figcaption>
+                        アームストロングのチェア再入荷
+                    </figcaption>
+                </figure>
+                <figure class="furniture-img">
+                    <img src="images/imgF.png" alt="木の温もりを感じられる小ぶりなテーブルです">
+                    <figcaption>
+                        アームストロングのテーブル入荷
+                    </figcaption>
+                </figure>
+            </div>
+            <p><a href="news.html" class="more-info-mobile">view more</a><i class="fa fa-angle-right"></i></p>
+        </section>
+        <!-- ④公式カタログ -->
+        <section class="catalogue">
+            <h2>公式カタログ</h2>
+            <p class="catalogue-pcview">様々なスタイルをご提案いたします。オーダーメイドも可能です。<br>
+                詳しくはカタログをご覧ください。</p>
+            <!-- ここからモバイル用の表示です -->
+            <p class="catalogue-mobile-view">様々なスタイルをご提案いたします。オーダーメイ<br>ドも可能です。<br>
+                詳しくはカタログをご覧ください。</p>
+            <!-- ここまで -->
+            <a href="#" download="#">
+                <p class="catalogue-dw">カタログをダウンロード</p>
+            </a>
+        </section>
+        <!-- ⑤お問い合わせ -->
+        <section class="form-part">
+            <h2>CONTACT</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" id="name-field" placeholder="お名前"><br>
+                <input type="email" name="email" id="email-field" placeholder="メールアドレス"><br>
+                <textarea name="comment" placeholder="お問い合わせ内容"></textarea><br>
+                <input class="pc-submit" type="submit" value="SEND">
+                <!-- ここからモバイル用のSendボタンです -->
+                <input class="mobile-submit" type="submit" value="Send">
+                <!-- ここまで -->
+            </form>
+        </section>
+        <!-- ⑥リクルート -->
+        <section class="recruit-part">
+            <h2>RECRUIT</h2>
+            <p>現在Staffを募集しております。<br>
+                詳しくは詳細ページをご覧ください。</p>
+            <p><a href="recruit.html" class="more-info-mobile">view more</a><i class="fa fa-angle-right"></i></p>
+        </section>
+    </main>
+    <!-- ⑦フッター -->
+    <footer>
+        <img src="images/logo_footer@2x.png" class="site-logo" alt="家具屋のアイコン">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <p><small>&copy;HTMLCSS.code</small></p>
+    </footer>
+</body>
+</html>
