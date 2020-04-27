@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* ====== リセットcss ====== */
+* {
+  box-sizing: border-box;
+}
+​
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+​
+body {
+    line-height:1;
+}
+​
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+​
+nav ul {
+    list-style:none;
+}
+​
+blockquote, q {
+    quotes:none;
+}
+​
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+​
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+​
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+​
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+​
+del {
+    text-decoration: line-through;
+}
+​
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+​
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+​
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+​
+input, select {
+    vertical-align:middle;
+}
+/* ====== /リセットcss ====== */
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    color: #3B3B3B;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #3B3B3B;
+}
+/* ======= 携帯用メディアクエリ（ページ全体） ====== */
+@media (max-width: 375px){
+    body{
+        width: 375px;
+    }
+}
+/* ====== ここからheader ====== */
+/* ====== PC用メディアクエリ ======= */
+@media (min-width: 376px){
+    header{
+        margin: 16px 96px 0 96px;
+        height: 56px;
+        background: url(images/logo_header@2x.png) no-repeat;
+        background-size: 50px 31px;
+    }
+    header a{
+    color: #B2B2B2;
+    text-decoration: none;
+    }
+    header a:hover{
+        color: #3B3B3B;
+        text-decoration: none;
+    }
+    header ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+    header span{
+        color: #3B3B3B;
+    }
+    nav li{
+        margin: 26px 0 0 56px;
+    }
+    .header-logo{
+        width: 38px;
+        height: 24px;
+    }
+    .none-pc01{
+        display: none;
+    }
+}
+/* ======= 携帯用メディアクエリ（header） ====== */
+@media (max-width: 375px){
+    .none-mobile01{
+        display: none;
+    }
+       /* 携帯用のheaderはこちら */
+    .none-pc01{
+        height: 56px;
+        width: 375px;
+        background: #918F89;
+        position: relative;
+        position: fixed;
+        z-index: 2;
+    }
+    .mobile-header-logo{
+        width: 39px;
+        height: 24px;
+        position: absolute;
+        top: 18px;
+        left: 170px;
+    }
+    .fas{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: 14px;
+        right: 19px;
+    }
+}
+/* ①メイン画像 */
+@media (min-width: 376px){
+    .main-message{
+        background: url(images/imgG.png) no-repeat;
+        background-size: 100% 100%;
+        height: 456px;
+        margin-bottom: 160px;
+        position: relative;
+    }
+    .main-message h1{
+        color: #918F89;
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-weight: normal;
+        position: absolute;
+        top: 191px;
+        left: 
+        228px;
+    }
+}
+/* ======= 携帯用メディアクエリ（メイン画像） ====== */
+@media (max-width: 375px){
+    .main-message{
+        background: url(images/news_top_sp.png) no-repeat;
+        background-size: 100% 100%;
+        height: 648px;
+        position: relative;
+        margin-bottom: 160px;
+        z-index: 1;
+    }
+    .main-message h1{
+        color: #3B3B3B;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        font-weight: normal;
+        position: absolute;
+        top: 200px;
+        left: 148.5px;
+    }
+}
+/* ③NEWS */
+@media (min-width: 376px){
+    .img-container{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 56px 65px;
+    }
+}
+.coming-items{
+    height: 456px;
+    margin-bottom: 240px;
+}
+.coming-items h2{
+    font-size: 23px;
+    letter-spacing: 2.3px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.img-container img{
+    height: 320px;
+    width: 320px;
+    opacity: 0.6;
+}
+.furniture-img{
+    margin-right: 64px;
+    position: relative;
+    background-color: #000;
+    height: 320px;
+    width: 320px;
+}
+figcaption{
+    color: #ccc;
+    position: absolute;
+    top: 144px;
+    left: 47px;
+}
+.coming-items p{
+    text-align: center;
+    letter-spacing: 0.43px;
+}
+.fa{
+    padding-left: 7px;
+    font-size: 11px;
+    color: #B2B2B2;
+}
+/* ======= 携帯用メディアクエリ（NEWS） ====== */
+@media (max-width: 375px){
+    .coming-items{
+        height: 976px;
+    }
+    .img-container{
+        display: flex;
+        flex-flow: column;
+        margin: 0 51.5px;
+    }
+    .furniture-img{
+        position: relative;
+        width: 272px;
+        height: 272px;
+        margin-bottom: 24px;
+    }
+    .furniture-img img{
+        width: 272px;
+        height: 272px;
+    }
+    .coming-items h2{
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        color: #3B3B3B;
+        margin-bottom: 24px;
+    }
+    figcaption{
+        font-size: 15px;
+        position: absolute;
+        top: 122px;
+        left: 36.5px;
+    }
+}
+/* ③フッター */
+footer{
+    height: 240px;
+    background: #918F89;
+    color: #fff;
+    position: relative;
+}
+footer a{
+    color: #fff;
+}
+footer ul{
+    padding: 100px 224px 51px 623px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    background: #918F89;
+}
+.site-logo{
+    width: 64px;
+    height: 40px;
+    position: absolute;
+    left: 224px;
+    top: 120px;
+}
+footer p{
+    font-size: 13px;
+    padding-bottom: 14px;
+    text-align: center;
+    background: #918F89;
+}
+@media (max-width: 375px){
+    footer{
+        height: 232px;
+        position: relative;
+    }
+    .site-logo{
+        position: absolute;
+        top: 72px;
+        left: 155px;
+        width: 51.69px;
+        height: 32px;
+    }
+    footer nav{
+        display: none;
+    }
+    small{
+        font-size: 10px;
+        position: absolute;
+        top: 186px;
+        left: 145px;   
+        margin-bottom: 32px;
+    }
+}
