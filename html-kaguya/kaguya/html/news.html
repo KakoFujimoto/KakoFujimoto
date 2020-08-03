@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-sclale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/stylesheet-news.css">
     <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>NEWS</title>
 </head>
 <!-- これはNEWSページです -->
@@ -15,10 +16,10 @@
         <!-- HTML/CSSのアイコンは背景で指定します -->
         <nav>
             <ul class="none-mobile01">
-                <li><a href="../html/top.html">HOME</a></li>
-                <li><a href="#"><span>NEWS</span></a></li>
-                <li><a href="../html/recruit.html">RECRUIT</a></li>
-                <li><a href="../html/contact.html">CONTACT</a></li>
+                <li><a href="../html/top.html" class="animation_link">HOME</a></li>
+                <li><a href="#" class="animation_link"><span>NEWS</span></a></li>
+                <li><a href="../html/recruit.html" class="animation_link">RECRUIT</a></li>
+                <li><a href="../html/contact.html" class="animation_link">CONTACT</a></li>
             </ul>
             <!-- これはモバイル用のヘッダーです -->
             <div class="none-pc01">
@@ -38,7 +39,7 @@
                 <figure class="furniture-img">
                     <img src="../images/imgD.png" alt="少しくすんだ青色のカウチです">
                     <figcaption>
-                        アームストロングのカウチ入荷
+                        <p class="img-description">アームストロングのカウチ入荷</p>
                     </figcaption>
                 </figure>
                 <figure class="furniture-img">
@@ -61,14 +62,15 @@
         <img src="../images/logo_footer@2x.png" class="site-logo" alt="家具屋のアイコン">
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="../html/news.html">NEWS</a></li>
-                <li><a href="../html/recruit.html">RECRUIT</a></li>
-                <li><a href="../html/contact.html">CONTACT</a></li>
+                <li><a href="#" class="animation_link">HOME</a></li>
+                <li><a href="../html/news.html" class="animation_link">NEWS</a></li>
+                <li><a href="../html/recruit.html" class="animation_link">RECRUIT</a></li>
+                <li><a href="../html/contact.html" class="animation_link">CONTACT</a></li>
             </ul>
         </nav>
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
+    <script src="../js/animation.js"></script>
 </body>
 
 </html>
