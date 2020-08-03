@@ -100,7 +100,6 @@ input, select {
 }
 /* ====== /リセットcss ====== */
 
-/* ここから本番のcss */
 body{
     font-family: "Noto Sans", sans-serif;
     color: #3B3B3B;
@@ -122,7 +121,7 @@ a{
     header{
         margin: 16px 96px 0 96px;
         height: 56px;
-        background: url(images/logo_header@2x.png) no-repeat;
+        background: url(../images/logo_header@2x.png) no-repeat;
         background-size: 50px 31px;
     }
     header a{
@@ -157,7 +156,7 @@ a{
     .none-mobile01{
         display: none;
     }
-    /* 携帯用のheaderはこちら */
+       /* 携帯用のheaderはこちら */
     .none-pc01{
         height: 56px;
         width: 375px;
@@ -184,27 +183,27 @@ a{
 /* ①メイン画像 */
 @media (min-width: 376px){
     .main-message{
-        background: url(images/imgH.png) no-repeat;
+        background: url(../images/imgG.png) no-repeat;
         background-size: 100% 100%;
         height: 456px;
-        margin-bottom: 80px;
+        margin-bottom: 160px;
         position: relative;
-        margin-bottom: 161px;
     }
     .main-message h1{
-        color: #fff;
+        color: #918F89;
         font-size: 30px;
         letter-spacing: 3px;
         font-weight: normal;
         position: absolute;
-        top: 192px;
-        left: 228px;
+        top: 191px;
+        left: 
+        228px;
     }
 }
 /* ======= 携帯用メディアクエリ（メイン画像） ====== */
 @media (max-width: 375px){
     .main-message{
-        background: url(images/contact_top_sp.png) no-repeat;
+        background: url(../images/news_top_sp.png) no-repeat;
         background-size: 100% 100%;
         height: 648px;
         position: relative;
@@ -212,121 +211,93 @@ a{
         z-index: 1;
     }
     .main-message h1{
-        color: #fff;
+        color: #3B3B3B;
         font-size: 25px;
         letter-spacing: 2.5px;
         font-weight: normal;
         position: absolute;
-        top: 229px;
-        left: 119px;
+        top: 200px;
+        left: 148.5px;
     }
 }
-/* ②お問い合わせ */
+/* ③NEWS */
 @media (min-width: 376px){
-    .mobile-submit ,.mobile-contact-sub{
-        display: none;
+    .img-container{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 56px 65px;
     }
-}  
-.form-part{
+}
+.coming-items{
+    height: 456px;
     margin-bottom: 240px;
-    height: 464px;
 }
-.form-part h2{
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-    font-size: 24px;
-    letter-spacing: 2.4px;
-    margin-bottom: 40px;
+.coming-items h2{
+    font-size: 23px;
+    letter-spacing: 2.3px;
     text-align: center;
+    margin-bottom: 48px;
 }
-.form-part p{
-    font-size: 15px;
-    letter-spacing: 0.6px;
-    margin-bottom: 72px;
+
+.img-container img{
+    height: 320px;
+    width: 320px;
+    opacity: 0.6;
+}
+.furniture-img{
+    margin-right: 64px;
+    position: relative;
+    background-color: #000;
+    height: 320px;
+    width: 320px;
+}
+figcaption{
+    color: #ccc;
+    position: absolute;
+    top: 144px;
+    left: 47px;
+}
+.coming-items p{
     text-align: center;
+    letter-spacing: 0.43px;
 }
-.form-part form{
-    text-align: center;
+.fa{
+    padding-left: 7px;
+    font-size: 11px;
+    color: #B2B2B2;
 }
-input[type="text"],
-input[type="email"]{
-    padding-left: 16px;
-    margin-bottom: 34px;
-    width: 454px;
-    height: 32px;
-    color: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;
-}
-textarea{
-    padding: 10px 0 0 16px;
-    margin-bottom: 47px;
-    resize: none;
-    width: 454px;
-    height: 200px;
-    color: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;
-}
-input[type="submit"]{
-    text-align: center;
-    width: 161px;
-    height: 32px;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    color: #707070;
-    background: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;  
-}
-input[type="submit"]:hover{
-    color: #fff;
-    background: #918F89;
-}
-/* ======= 携帯用メディアクエリ（CONTACT） ====== */
+/* ======= 携帯用メディアクエリ（NEWS） ====== */
 @media (max-width: 375px){
-    input[type="text"],
-    input[type="email"]{
-        padding-left: 17px;
-        margin-bottom: 16px;
-        width: 286px;
-        height: 32px;
-        color: #D1D1D1;
-        border: 1px #D1D1D1 solid;
-        border-radius: 10px;  
+    .coming-items{
+        height: 976px;
     }
-    textarea{
-        padding: 15px 0 0 17px;
-        margin-bottom: 32px;
-        resize: none;
-        width: 286px;
-        height: 160px;
-        color: #D1D1D1;
-        border: 1px #D1D1D1 solid;
-        border-radius: 10px;
+    .img-container{
+        display: flex;
+        flex-flow: column;
+        margin: 0 51.5px;
     }
-    input[type="submit"]{
-        text-align: center;
-        width: 173px;
-        height: 48px;
-        font-size: 18px;
-        letter-spacing: 0.9px;
-        color: #707070;
-        background: #D1D1D1;
-        border: 1px #D1D1D1 solid;
-        border-radius: 20px;  
+    .furniture-img{
+        position: relative;
+        width: 272px;
+        height: 272px;
+        margin-bottom: 24px;
     }
-    .pc-submit , .pc-contact-sub{
-        display: none;
+    .furniture-img img{
+        width: 272px;
+        height: 272px;
     }
-    .form-part p{
-        display: none;
+    .coming-items h2{
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        color: #3B3B3B;
+        margin-bottom: 24px;
     }
-    input{
-        color: #D1D1D1;
-    }
-    ::-webkit-input-placeholder{
-    color: #D1D1D1;
+    figcaption{
+        font-size: 15px;
+        position: absolute;
+        top: 122px;
+        left: 36.5px;
     }
 }
 /* ③フッター */

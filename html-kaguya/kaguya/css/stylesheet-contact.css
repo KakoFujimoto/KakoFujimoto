@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+​
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -14,7 +15,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video{
+time, mark, audio, video {
     margin:0;
     padding:0;
     border:0;
@@ -23,54 +24,69 @@ time, mark, audio, video{
     vertical-align:baseline;
     background:transparent;
 }
-body{
-    /* line-height:1; */
+​
+body {
+    line-height:1;
 }
+​
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
 }
-nav ul{
+​
+nav ul {
     list-style:none;
 }
+​
 blockquote, q {
     quotes:none;
 }
+​
 blockquote:before, blockquote:after,
 q:before, q:after {
     content:'';
     content:none;
 }
-a{
+​
+a {
     margin:0;
     padding:0;
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
 }
-ins{
+​
+/* change colours to suit your needs */
+ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
-mark{
+​
+/* change colours to suit your needs */
+mark {
     background-color:#ff9;
     color:#000;
     font-style:italic;
     font-weight:bold;
 }
+​
 del {
     text-decoration: line-through;
 }
+​
 abbr[title], dfn[title] {
     border-bottom:1px dotted;
     cursor:help;
 }
-table{
+​
+table {
     border-collapse:collapse;
     border-spacing:0;
 }
-hr{
+​
+/* change border colour to suit your needs */
+hr {
     display:block;
     height:1px;
     border:0;  
@@ -78,6 +94,7 @@ hr{
     margin:1em 0;
     padding:0;
 }
+​
 input, select {
     vertical-align:middle;
 }
@@ -105,7 +122,7 @@ a{
     header{
         margin: 16px 96px 0 96px;
         height: 56px;
-        background: url(images/logo_header@2x.png) no-repeat;
+        background: url(../images/logo_header@2x.png) no-repeat;
         background-size: 50px 31px;
     }
     header a{
@@ -140,7 +157,7 @@ a{
     .none-mobile01{
         display: none;
     }
-   /* 携帯用のheaderはこちら */
+    /* 携帯用のheaderはこちら */
     .none-pc01{
         height: 56px;
         width: 375px;
@@ -167,7 +184,7 @@ a{
 /* ①メイン画像 */
 @media (min-width: 376px){
     .main-message{
-        background: url(images/recruit_top.png) no-repeat;
+        background: url(../images/imgH.png) no-repeat;
         background-size: 100% 100%;
         height: 456px;
         margin-bottom: 80px;
@@ -187,7 +204,7 @@ a{
 /* ======= 携帯用メディアクエリ（メイン画像） ====== */
 @media (max-width: 375px){
     .main-message{
-        background: url(images/recruit_top_sp.png) no-repeat;
+        background: url(../images/contact_top_sp.png) no-repeat;
         background-size: 100% 100%;
         height: 648px;
         position: relative;
@@ -195,120 +212,121 @@ a{
         z-index: 1;
     }
     .main-message h1{
-        color: #3B3B3B;
+        color: #fff;
         font-size: 25px;
         letter-spacing: 2.5px;
         font-weight: normal;
         position: absolute;
-        top: 200px;
+        top: 229px;
         left: 119px;
     }
 }
-/* ②採用情報  */
-    @media (min-width: 376px){
-        .recruit-information{
-            margin-bottom: 320px;
-            font-size: 14px;
-        }
-        .recruit-information h2{
-            font-size: 23px;
-            letter-spacing: 2.3px;
-            font-weight: normal;
-            text-align: center;
-            margin-bottom: 32px;
-        }
-        table{
-            border-collapse: collapse;
-            margin: 0 auto;
-            width: 640px;
-            height: 624px;
-        }
-        tr,td{
-            border: 1px solid #707070;
-        }
-        td{
-            vertical-align: middle;
-            padding: 16px 50px 16px 80px;
-        }
-        table li{
-            list-style: none;
-        }
-        table li::before {
-            content: '';
-            width: 2px;
-            height: 2px;
-            display: inline-block;
-            border-radius: 100%;
-            background: #3B3B3B;
-            position: relative;
-            left: -3px;
-            top: -3px;
-        }
-        span{
-            display: inline-block;
-            font-size: 16px;
-            padding-bottom: 6px;
-        }
-        .job-type{
-            width: 220px;
-            font-size: 16px;
-            padding: 0 auto;
-            background: #d5d5d5;
-            vertical-align: middle;
-        }
+/* ②お問い合わせ */
+@media (min-width: 376px){
+    .mobile-submit ,.mobile-contact-sub{
+        display: none;
     }
-/* ======= 携帯用メディアクエリ（RECRUIT） ====== */
+}  
+.form-part{
+    margin-bottom: 240px;
+    height: 464px;
+}
+.form-part h2{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.form-part p{
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    margin-bottom: 72px;
+    text-align: center;
+}
+.form-part form{
+    text-align: center;
+}
+input[type="text"],
+input[type="email"]{
+    padding-left: 16px;
+    margin-bottom: 34px;
+    width: 454px;
+    height: 32px;
+    color: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;
+}
+textarea{
+    padding: 10px 0 0 16px;
+    margin-bottom: 47px;
+    resize: none;
+    width: 454px;
+    height: 200px;
+    color: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;
+}
+input[type="submit"]{
+    text-align: center;
+    width: 161px;
+    height: 32px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    color: #707070;
+    background: #D1D1D1;
+    border: 1px #D1D1D1 solid;
+    border-radius: 20px;  
+}
+input[type="submit"]:hover{
+    color: #fff;
+    background: #918F89;
+}
+/* ======= 携帯用メディアクエリ（CONTACT） ====== */
 @media (max-width: 375px){
-    .recruit-information{
-        margin-bottom: 256px;
+    input[type="text"],
+    input[type="email"]{
+        padding-left: 17px;
+        margin-bottom: 16px;
+        width: 286px;
+        height: 32px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 10px;  
     }
-    .recruit-information h2{
-            font-size: 23px;
-            letter-spacing: 2.3px;
-            font-weight: normal;
-            text-align: center;
-            margin-bottom: 32px;
-        }
-    table{
-        border-collapse: collapse;
-        margin: 0 auto;
-        width: 313px;
-        height: 624px;
-        font-size: 13px;
+    textarea{
+        padding: 15px 0 0 17px;
+        margin-bottom: 32px;
+        resize: none;
+        width: 286px;
+        height: 160px;
+        color: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 10px;
     }
-    tr,td{
-        border: 1px solid #707070;
-    }
-    .job-details{
-        vertical-align: middle;
-        padding-left: 20px;
-    }
-    table li{
-        list-style: none;
-    }
-    table li::before {
-        content: '';
-        width: 2px;
-        height: 2px;
-        display: inline-block;
-        border-radius: 100%;
-        background: #3B3B3B;
-        position: relative;
-        left: -3px;
-        top: -3px;
-    }
-    span{
-        display: inline-block;
-        font-size: 15px;
-        padding-bottom: 6px;
-    }
-    .job-type{
-        width: 63px;
-        font-size: 14px;
-        padding: 0 auto;
-        background: #d5d5d5;
-        vertical-align: middle;
+    input[type="submit"]{
         text-align: center;
+        width: 173px;
+        height: 48px;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+        color: #707070;
+        background: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;  
+    }
+    .pc-submit , .pc-contact-sub{
+        display: none;
+    }
+    .form-part p{
+        display: none;
+    }
+    input{
+        color: #D1D1D1;
+    }
+    ::-webkit-input-placeholder{
+    color: #D1D1D1;
     }
 }
 /* ③フッター */

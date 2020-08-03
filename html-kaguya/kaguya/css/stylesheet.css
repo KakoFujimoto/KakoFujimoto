@@ -105,7 +105,7 @@ a{
     header{
         margin: 16px 96px 0 96px;
         height: 56px;
-        background: url(images/logo_header@2x.png) no-repeat;
+        background: url(../images/logo_header@2x.png) no-repeat;
         background-size: 50px 31px;
     }
     header a{
@@ -168,7 +168,7 @@ a{
 /* ====== PC用メディアクエリ ======= */
 @media (min-width: 376px){
     .main-message{
-        background: url(images/imgB.png) no-repeat;
+        background: url(../images/imgB.png) no-repeat;
         background-size: 100% 100%;
         height: 744px;
         margin-bottom: 80px;
@@ -197,7 +197,7 @@ a{
         display: none;
     }
     .main-message{
-        background: url(images/home_top_sp.png) no-repeat;
+        background: url(../images/home_top_sp.png) no-repeat;
         height: 744px;
         margin-bottom: 88px;
         z-index: 1;
@@ -251,7 +251,7 @@ a{
     .our-proposal{
         margin-left: 8%;
         height: 560px;
-        background: url(images/imgA.png) no-repeat left 88px top 0;
+        background: url(../images/imgA.png) no-repeat left 88px top 0;
         background-size: 560px 560px;
         margin-bottom: 240px;
         position: relative;

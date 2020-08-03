@@ -3,7 +3,6 @@
 * {
   box-sizing: border-box;
 }
-​
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -15,7 +14,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+time, mark, audio, video{
     margin:0;
     padding:0;
     border:0;
@@ -24,69 +23,54 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
 }
-​
-body {
-    line-height:1;
+body{
+    /* line-height:1; */
 }
-​
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
 }
-​
-nav ul {
+nav ul{
     list-style:none;
 }
-​
 blockquote, q {
     quotes:none;
 }
-​
 blockquote:before, blockquote:after,
 q:before, q:after {
     content:'';
     content:none;
 }
-​
-a {
+a{
     margin:0;
     padding:0;
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
 }
-​
-/* change colours to suit your needs */
-ins {
+ins{
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
-​
-/* change colours to suit your needs */
-mark {
+mark{
     background-color:#ff9;
     color:#000;
     font-style:italic;
     font-weight:bold;
 }
-​
 del {
     text-decoration: line-through;
 }
-​
 abbr[title], dfn[title] {
     border-bottom:1px dotted;
     cursor:help;
 }
-​
-table {
+table{
     border-collapse:collapse;
     border-spacing:0;
 }
-​
-/* change border colour to suit your needs */
-hr {
+hr{
     display:block;
     height:1px;
     border:0;  
@@ -94,12 +78,12 @@ hr {
     margin:1em 0;
     padding:0;
 }
-​
 input, select {
     vertical-align:middle;
 }
 /* ====== /リセットcss ====== */
 
+/* ここから本番のcss */
 body{
     font-family: "Noto Sans", sans-serif;
     color: #3B3B3B;
@@ -121,7 +105,7 @@ a{
     header{
         margin: 16px 96px 0 96px;
         height: 56px;
-        background: url(images/logo_header@2x.png) no-repeat;
+        background: url(../images/logo_header@2x.png) no-repeat;
         background-size: 50px 31px;
     }
     header a{
@@ -156,7 +140,7 @@ a{
     .none-mobile01{
         display: none;
     }
-       /* 携帯用のheaderはこちら */
+   /* 携帯用のheaderはこちら */
     .none-pc01{
         height: 56px;
         width: 375px;
@@ -183,27 +167,27 @@ a{
 /* ①メイン画像 */
 @media (min-width: 376px){
     .main-message{
-        background: url(images/imgG.png) no-repeat;
+        background: url(../images/recruit_top.png) no-repeat;
         background-size: 100% 100%;
         height: 456px;
-        margin-bottom: 160px;
+        margin-bottom: 80px;
         position: relative;
+        margin-bottom: 161px;
     }
     .main-message h1{
-        color: #918F89;
+        color: #fff;
         font-size: 30px;
         letter-spacing: 3px;
         font-weight: normal;
         position: absolute;
-        top: 191px;
-        left: 
-        228px;
+        top: 192px;
+        left: 228px;
     }
 }
 /* ======= 携帯用メディアクエリ（メイン画像） ====== */
 @media (max-width: 375px){
     .main-message{
-        background: url(images/news_top_sp.png) no-repeat;
+        background: url(../images/recruit_top_sp.png) no-repeat;
         background-size: 100% 100%;
         height: 648px;
         position: relative;
@@ -217,87 +201,114 @@ a{
         font-weight: normal;
         position: absolute;
         top: 200px;
-        left: 148.5px;
+        left: 119px;
     }
 }
-/* ③NEWS */
-@media (min-width: 376px){
-    .img-container{
-        display: flex;
-        justify-content: center;
-        margin: 0 0 56px 65px;
+/* ②採用情報  */
+    @media (min-width: 376px){
+        .recruit-information{
+            margin-bottom: 320px;
+            font-size: 14px;
+        }
+        .recruit-information h2{
+            font-size: 23px;
+            letter-spacing: 2.3px;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: 640px;
+            height: 624px;
+        }
+        tr,td{
+            border: 1px solid #707070;
+        }
+        td{
+            vertical-align: middle;
+            padding: 16px 50px 16px 80px;
+        }
+        table li{
+            list-style: none;
+        }
+        table li::before {
+            content: '';
+            width: 2px;
+            height: 2px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #3B3B3B;
+            position: relative;
+            left: -3px;
+            top: -3px;
+        }
+        span{
+            display: inline-block;
+            font-size: 16px;
+            padding-bottom: 6px;
+        }
+        .job-type{
+            width: 220px;
+            font-size: 16px;
+            padding: 0 auto;
+            background: #d5d5d5;
+            vertical-align: middle;
+        }
     }
-}
-.coming-items{
-    height: 456px;
-    margin-bottom: 240px;
-}
-.coming-items h2{
-    font-size: 23px;
-    letter-spacing: 2.3px;
-    text-align: center;
-    margin-bottom: 48px;
-}
-
-.img-container img{
-    height: 320px;
-    width: 320px;
-    opacity: 0.6;
-}
-.furniture-img{
-    margin-right: 64px;
-    position: relative;
-    background-color: #000;
-    height: 320px;
-    width: 320px;
-}
-figcaption{
-    color: #ccc;
-    position: absolute;
-    top: 144px;
-    left: 47px;
-}
-.coming-items p{
-    text-align: center;
-    letter-spacing: 0.43px;
-}
-.fa{
-    padding-left: 7px;
-    font-size: 11px;
-    color: #B2B2B2;
-}
-/* ======= 携帯用メディアクエリ（NEWS） ====== */
+/* ======= 携帯用メディアクエリ（RECRUIT） ====== */
 @media (max-width: 375px){
-    .coming-items{
-        height: 976px;
+    .recruit-information{
+        margin-bottom: 256px;
     }
-    .img-container{
-        display: flex;
-        flex-flow: column;
-        margin: 0 51.5px;
+    .recruit-information h2{
+            font-size: 23px;
+            letter-spacing: 2.3px;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+    table{
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 313px;
+        height: 624px;
+        font-size: 13px;
     }
-    .furniture-img{
+    tr,td{
+        border: 1px solid #707070;
+    }
+    .job-details{
+        vertical-align: middle;
+        padding-left: 20px;
+    }
+    table li{
+        list-style: none;
+    }
+    table li::before {
+        content: '';
+        width: 2px;
+        height: 2px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #3B3B3B;
         position: relative;
-        width: 272px;
-        height: 272px;
-        margin-bottom: 24px;
+        left: -3px;
+        top: -3px;
     }
-    .furniture-img img{
-        width: 272px;
-        height: 272px;
-    }
-    .coming-items h2{
-        font-weight: normal;
-        font-size: 25px;
-        letter-spacing: 2.5px;
-        color: #3B3B3B;
-        margin-bottom: 24px;
-    }
-    figcaption{
+    span{
+        display: inline-block;
         font-size: 15px;
-        position: absolute;
-        top: 122px;
-        left: 36.5px;
+        padding-bottom: 6px;
+    }
+    .job-type{
+        width: 63px;
+        font-size: 14px;
+        padding: 0 auto;
+        background: #d5d5d5;
+        vertical-align: middle;
+        text-align: center;
     }
 }
 /* ③フッター */
