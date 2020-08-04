@@ -21,63 +21,14 @@ $(function () {
         return false;
     });
 
-    $('.furniture-img').hover(
+    $('.furniture-img').mouseover(
         function () {
-            $(this).find('figcaption').addClass('animation')
-        }
-    );
-
-
-
-    // $('figcaption').css('visibility', 'hidden');
-    // $('.furniture-img').hover(function () {
-    //     $(this).css('visibility', 'visible');
-    // });
-
-    // $('.furniture-img').mouseover(
-    //     function () {
-    //         $('.description-of-couch').css({
-    //             'color': '#fff',
-    //             'position': 'absolute',
-    //             'bottom': '-100%',
-    //             'z-index': '2',
-    //             'width': '100%',
-    //             'height': '100%',
-    //             'background': 'rgba(0,0,0,.6)',
-    //             '-webkit-transition': '.3s',
-    //             'transition': '.3s',
-    //             'opacity': '1',
-    //             'bottom': '0',
-    //             'left': '0'
-    //         }).mouseout(function () {
-    //             $('.description-of-couch').css({
-    //                 'color': '',
-    //                 'position': '',
-    //                 'bottom': '0',
-    //                 'z-index': '',
-    //                 'width': '',
-    //                 'height': '',
-    //                 'background': '',
-    //                 '-webkit-transition': '',
-    //                 'transition': '',
-    //                 'opacity': '',
-    //                 'bottom': '',
-    //                 'left': ''
-    //             })
-    //         });
-    //     })
-
-    // $(window).on("load", function () {
-    //     $('.hcaption').hcaptions();
-    // });
-    // $(selector).hcaptions({
-    //     effect: "slide",
-    //     direction: "bottom"
-    // });
-
-    // $(function () {
-    //     $('#container').sliphover();
-    // })
+            $(this).find('figcaption').addClass('animation');
+        }).mouseout(
+            function () {
+                $(this).find('figcaption').removeClass('animation');
+            }
+        );
 
 })
 
