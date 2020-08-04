@@ -339,6 +339,8 @@ figure {
     width: 300px;
 }
 figcaption{
+    text-align: center;
+    line-height: 320px;
     color: #fff;
     position: absolute;
     bottom: -100%;
