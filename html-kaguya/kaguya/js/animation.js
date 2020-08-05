@@ -43,6 +43,28 @@ $(function () {
     //     $('.pc-submit').html('<p>アイウエオ</p>');
     // });
 
+    // $('.nav-button').on('click', function () {
+    //     if ($(this).hasClass('active')) {
+    //         $(this).removeClass('active');
+    //         $('.nav-wrap').addClass('close').removeClass('open');
+    //     } else {
+    //         $(this).addClass('active');
+    //         $('.nav-wrap').addClass('open').removeClass('close');
+    //     }
+    // });
+
+    $(function () {
+        $('.navToggle').click(function () {
+            $(this).toggleClass('active');
+
+            if ($(this).hasClass('active')) {
+                $('.globalMenuSp').addClass('active');
+            } else {
+                $('.globalMenuSp').removeClass('active');
+            }
+        });
+    });
+
 })
 
 
