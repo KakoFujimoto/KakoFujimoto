@@ -30,6 +30,19 @@ $(function () {
             }
         );
 
+    $('form').submit(function () {
+        $('.pc-submit').html('<input class="pc-submit is-submitted" type="submit" value="TRANSMISSION COMPLETED">');
+    });
+
+    // $('h2').on('click',
+    //     function () {
+    //         $('h2').html('<p>aaaa</p>');
+    //     }
+    // )
+    // $('.pc-submit').mouseover(function () {
+    //     $('.pc-submit').html('<p>アイウエオ</p>');
+    // });
+
 })
 
 

@@ -502,6 +502,17 @@ figcaption{
         color: #fff;
         background: #918F89;
     }
+    .is-submitted{
+        text-align: center;
+        width: 201px;
+        height: 32px;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        color: #707070;
+        background: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px; 
+    }
 /* ======= 携帯用メディアクエリ（CONTACT） ====== */
 @media (max-width: 375px){
     input[type="text"],
