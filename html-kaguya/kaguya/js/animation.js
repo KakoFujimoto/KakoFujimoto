@@ -1,5 +1,6 @@
 'use strict';
 
+// ページ遷移時のアニメーション
 $(function () {
 
     $('head').append(
@@ -21,6 +22,7 @@ $(function () {
         return false;
     });
 
+    //NEWS画像にフィルタをオーバーレイするアニメーション
     $('.furniture-img').mouseover(
         function () {
             $(this).find('figcaption').addClass('animation');
@@ -29,30 +31,6 @@ $(function () {
                 $(this).find('figcaption').removeClass('animation');
             }
         );
-
-    $('form').submit(function () {
-        $('.pc-submit').html('<input class="pc-submit is-submitted" type="submit" value="TRANSMISSION COMPLETED">');
-    });
-
-    // $('h2').on('click',
-    //     function () {
-    //         $('h2').html('<p>aaaa</p>');
-    //     }
-    // )
-    // $('.pc-submit').mouseover(function () {
-    //     $('.pc-submit').html('<p>アイウエオ</p>');
-    // });
-
-    // $('.nav-button').on('click', function () {
-    //     if ($(this).hasClass('active')) {
-    //         $(this).removeClass('active');
-    //         $('.nav-wrap').addClass('close').removeClass('open');
-    //     } else {
-    //         $(this).addClass('active');
-    //         $('.nav-wrap').addClass('open').removeClass('close');
-    //     }
-    // });
-
     $(function () {
         $('.navToggle').click(function () {
             $(this).toggleClass('active');
@@ -65,6 +43,13 @@ $(function () {
         });
     });
 
+    //SENDボタンを押したら文言が変更される
+    $(function () {
+        $('.btn').on('click', function (event) {
+            event.preventDefault();
+            $(this).toggleClass('active');
+        });
+    });
 })
 
 
