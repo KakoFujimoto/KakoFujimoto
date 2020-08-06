@@ -45,9 +45,9 @@ $(function () {
 
     //SENDボタンを押したら文言が変更される
     $(function () {
-        $('.btn').on('click', function (event) {
-            event.preventDefault();
-            $(this).toggleClass('active');
+        $('.submit').on('click', function () {
+            $('.submit').css('display', 'none');
+            $('.is-submitted').css('display', 'block');
         });
     });
 })

@@ -507,7 +507,7 @@ figcaption{
     }
     .is-submitted{
         text-align: center;
-        width: 201px;
+        width: 340px;
         height: 32px;
         font-size: 14px;
         letter-spacing: 1.4px;
@@ -515,78 +515,10 @@ figcaption{
         background: #D1D1D1;
         border: 1px #D1D1D1 solid;
         border-radius: 20px; 
-    }
-    .btn{
-    display: block;
-    text-align: center;
-    width: 161px;
-    height: 32px;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    color: #707070;
-    background: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;
-    line-height: 32px;
-    text-decoration: none;
-    margin: 0 auto;
-}
-.btn:hover{
-    color: #fff;
-    background: #918F89;
-    }
-.btn.active {
-    width: 350px;
-}
-.btn.active:hover{
-    color: #707070;
-    background: #D1D1D1;
-    }
-.btn > span:last-of-type,
-.btn.active > span:first-of-type
-{
-    display: none;
-}
-
-.btn.active > span:last-of-type {
-    display: inline;
-}
-.btn{
-    display: block;
-    text-align: center;
-    width: 161px;
-    height: 32px;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    color: #707070;
-    background: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;
-    line-height: 32px;
-    text-decoration: none;
-    margin: 0 auto;
-}
-.btn:hover{
-    color: #fff;
-    background: #918F89;
-    }
-.btn.active {
-    width: 350px;
-}
-.btn.active:hover{
-    color: #707070;
-    background: #D1D1D1;
-    }
-.btn > span:last-of-type,
-.btn.active > span:first-of-type
-{
-    display: none;
-}
-
-.btn.active > span:last-of-type {
-    display: inline;
-}
-
+        display: none;
+        margin: 0 auto;
+        line-height: 32px;
+    } 
 /* ======= 携帯用メディアクエリ（CONTACT） ====== */
 @media (max-width: 375px){
     input[type="text"],

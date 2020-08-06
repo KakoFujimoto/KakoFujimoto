@@ -269,21 +269,35 @@ textarea{
     border: 1px #D1D1D1 solid;
     border-radius: 20px;
 }
-input[type="submit"]{
-    text-align: center;
-    width: 161px;
-    height: 32px;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    color: #707070;
-    background: #D1D1D1;
-    border: 1px #D1D1D1 solid;
-    border-radius: 20px;  
-}
-input[type="submit"]:hover{
-    color: #fff;
-    background: #918F89;
-}
+.submit{
+        text-align: center;
+        width: 161px;
+        height: 32px;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        color: #707070;
+        background: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px;  
+    }
+    .submit:hover{
+        color: #fff;
+        background: #918F89;
+    }
+    .is-submitted{
+        text-align: center;
+        width: 340px;
+        height: 32px;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        color: #707070;
+        background: #D1D1D1;
+        border: 1px #D1D1D1 solid;
+        border-radius: 20px; 
+        display: none;
+        margin: 0 auto;
+        line-height: 32px;
+    }
 /* ======= 携帯用メディアクエリ（CONTACT） ====== */
 @media (max-width: 375px){
     input[type="text"],
