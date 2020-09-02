@@ -1,4 +1,3 @@
-# NRIのcssの提出です
-## htmlもclass名付与など少し改変しています
-### 指示のあった通り、html,cssファイル共に'nri-html'ディレクトリに格納しました。
-#### 問題があれば教えてください。
+# NRIコーポレートサイト模写
+
+[見本サイト](https://www.nri.com/jp/company/whats/story06)
