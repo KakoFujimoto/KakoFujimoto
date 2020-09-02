@@ -5,5 +5,4 @@
 - NEWSページの画像ホバー時のアニメーション
 - HOMEページとCONTACTページの「SEND」をクリックしたら「TRANSMISSION COMPLETED」にボタン文言を変更
 
-##
-[見本のXDサイト](https://xd.adobe.com/view/f4ad8df6-cce4-4626-5dbf-e05322ce4f32-829c/)
+## [見本のXDサイト](https://xd.adobe.com/view/f4ad8df6-cce4-4626-5dbf-e05322ce4f32-829c/)
