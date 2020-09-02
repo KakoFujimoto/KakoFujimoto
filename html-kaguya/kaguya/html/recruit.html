@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-sclale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet-recruit.css">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet-recruit.css">
     <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <script src="../js/jquery.min.js"></script>
     <title>RECRUIT</title>
-</head>    
+</head>
 <!-- これはリクルートのページです -->
+
 <body>
     <header>
         <!-- HTML/CSSのアイコンは背景で指定します -->
         <nav>
             <ul class="none-mobile01">
-                <li><a href="top.html">HOME</a></li>
-                <li><a href="news.html">NEWS</a></li>
-                <li><a href="#"><span>RECRUIT</span></a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="../html/top.html" class="animation_link">HOME</a></li>
+                <li><a href="../html/news.html" class="animation_link">NEWS</a></li>
+                <li><a href="#" class="animation_link"><span>RECRUIT</span></a></li>
+                <li><a href="../html/contact.html" class="animation_link">CONTACT</a></li>
             </ul>
             <!-- これはモバイル用のヘッダーです -->
             <div class="none-pc01">
-                <img class="mobile-header-logo" src="images/logo_footer@2x.png" alt="家具屋サイトメニューへ">
+                <img class="mobile-header-logo" src="../images/logo_footer@2x.png" alt="家具屋サイトメニューへ">
+                <div class="navToggle">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="globalMenuSp">
+                    <ul>
+                        <li><a href="../html/top.html">HOME</a></li>
+                        <li><a href="../html/news.html">NEWS</a></li>
+                        <li><a href="../html/contact.html">CONTACT</a></li>
+                        <li><a href="../html/recruit.html">RECRUIT</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -41,7 +55,7 @@
                             <li>商品管理</li>
                             <li>オーダーメイド家具の発注</li>
                         </ul>
-                    </td> 
+                    </td>
                 </tr>
                 <tr>
                     <td class="job-details"><span>時給</span><br>
@@ -64,17 +78,17 @@
                             <li>オーダーメイド家具のディレクション</li>
                             <li>オーダーメイド家具の製作</li>
                         </ul>
-                    </td> 
+                    </td>
                 </tr>
                 <tr>
                     <td class="job-details"><span>月給</span><br>
-                    35万円〜
+                        35万円〜
                     </td>
                 </tr>
                 <tr>
                     <td class="job-details"><span>勤務時間</span><br>
-                    10:00&nbsp;-&nbsp;19:00<br>
-                    週3〜5日
+                        10:00&nbsp;-&nbsp;19:00<br>
+                        週3〜5日
                     </td>
                 </tr>
             </table>
@@ -82,16 +96,18 @@
     </main>
     <!-- ③フッター -->
     <footer>
-        <img src="images/logo_footer@2x.png" class="site-logo" alt="家具屋のアイコン">
+        <img src="../images/logo_footer@2x.png" class="site-logo" alt="家具屋のアイコン">
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="news.html">NEWS</a></li>
-                <li><a href="recruit.html">RECRUIT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#" class="animation_link">HOME</a></li>
+                <li><a href="../html/news.html" class="animation_link">NEWS</a></li>
+                <li><a href="../html/recruit.html" class="animation_link">RECRUIT</a></li>
+                <li><a href="../html/contact.html" class="animation_link">CONTACT</a></li>
             </ul>
         </nav>
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
+    <script src="../js/animation.js"></script>
 </body>
+
 </html>

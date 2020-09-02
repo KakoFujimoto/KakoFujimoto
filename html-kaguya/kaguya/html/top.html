@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-sclale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="style.css" rel="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <script src="../js/jquery.min.js"></script>
     <title>We propose a life.</title>
 </head>
-<body>
+
+<body class="body-fade-in">
     <header>
         <!-- HTML/CSSのアイコンは背景で指定します -->
         <nav>
             <ul class="none-mobile01">
-                <li><a href="#"><span>HOME</span></a></li>
-                <li><a href="news.html">NEWS</a></li>
-                <li><a href="recruit.html">RECRUIT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#" class="animation_link"><span>HOME</span></a></li>
+                <li><a href="../html/news.html" class="animation_link">NEWS</a></li>
+                <li><a href="../html/recruit.html" class="animation_link">RECRUIT</a></li>
+                <li><a href="../html/contact.html" class="animation_link">CONTACT</a></li>
             </ul>
             <!-- これはモバイル用のヘッダーです -->
             <div class="none-pc01">
-                <img class="mobile-header-logo" src="images/logo_footer@2x.png" alt="家具屋サイトメニューへ">
+                <img class="mobile-header-logo" src="../images/logo_footer@2x.png" alt="家具屋サイトメニューへ">
+                <div class="navToggle">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="globalMenuSp">
+                    <ul>
+                        <li><a href="../html/top.html">HOME</a></li>
+                        <li><a href="../html/news.html">NEWS</a></li>
+                        <li><a href="../html/contact.html">CONTACT</a></li>
+                        <li><a href="../html/recruit.html">RECRUIT</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -52,7 +66,7 @@
                 そんな空間をお客様と一緒に作り上げていくのが<br>
                 私たちの仕事です。
             </p>
-            <img class="mobile-chair-img" src="images/imgA.png" alt="アースカラーのチェアー">
+            <img class="mobile-chair-img" src="../images/imgA.png" alt="アースカラーのチェアー">
             <!-- ここまで -->
         </section>
         <!-- ③NEWS -->
@@ -60,25 +74,25 @@
             <h2>NEWS</h2>
             <div class="img-container">
                 <figure class="furniture-img">
-                    <img src="images/imgD.png" alt="少しくすんだ青色のカウチです">
+                    <img src="../images/imgD.png" alt="少しくすんだ青色のカウチです">
                     <figcaption>
                         アームストロングのカウチ入荷
                     </figcaption>
                 </figure>
                 <figure class="furniture-img">
-                    <img src="images/imgE.png" alt="真っ赤な独り掛けのチェアです">
+                    <img src="../images/imgE.png" alt="真っ赤な独り掛けのチェアです">
                     <figcaption>
                         アームストロングのチェア再入荷
                     </figcaption>
                 </figure>
                 <figure class="furniture-img">
-                    <img src="images/imgF.png" alt="木の温もりを感じられる小ぶりなテーブルです">
+                    <img src="../images/imgF.png" alt="木の温もりを感じられる小ぶりなテーブルです">
                     <figcaption>
                         アームストロングのテーブル入荷
                     </figcaption>
                 </figure>
             </div>
-            <p><a href="news.html" class="more-info-mobile">view more</a><i class="fa fa-angle-right"></i></p>
+            <p><a href="../html/news.html" class="more-info-mobile">view more</a><i class="fa fa-angle-right"></i></p>
         </section>
         <!-- ④公式カタログ -->
         <section class="catalogue">
@@ -100,10 +114,8 @@
                 <input type="text" name="name" id="name-field" placeholder="お名前"><br>
                 <input type="email" name="email" id="email-field" placeholder="メールアドレス"><br>
                 <textarea name="comment" placeholder="お問い合わせ内容"></textarea><br>
-                <input class="pc-submit" type="submit" value="SEND">
-                <!-- ここからモバイル用のSendボタンです -->
-                <input class="mobile-submit" type="submit" value="Send">
-                <!-- ここまで -->
+                <button class="submit" type="button">SEND</button>
+                <p class="is-submitted">TRANSMISSION COMPLETED</p>
             </form>
         </section>
         <!-- ⑥リクルート -->
@@ -111,21 +123,24 @@
             <h2>RECRUIT</h2>
             <p>現在Staffを募集しております。<br>
                 詳しくは詳細ページをご覧ください。</p>
-            <p><a href="recruit.html" class="more-info-mobile">view more</a><i class="fa fa-angle-right"></i></p>
+            <p><a href="../html/recruit.html" class="more-info-mobile">view more</a><i class="fa fa-angle-right"></i>
+            </p>
         </section>
     </main>
     <!-- ⑦フッター -->
     <footer>
-        <img src="images/logo_footer@2x.png" class="site-logo" alt="家具屋のアイコン">
+        <img src="../images/logo_footer@2x.png" class="site-logo" alt="家具屋のアイコン">
         <nav>
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="news.html">NEWS</a></li>
-                <li><a href="recruit.html">RECRUIT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="../html/news.html">NEWS</a></li>
+                <li><a href="../html/recruit.html">RECRUIT</a></li>
+                <li><a href="../html/contact.html">CONTACT</a></li>
             </ul>
         </nav>
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
+    <script src="../js/animation.js"></script>
 </body>
+
 </html>

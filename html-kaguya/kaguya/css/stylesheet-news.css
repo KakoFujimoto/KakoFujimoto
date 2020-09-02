@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
 }
+​
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -14,7 +15,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video{
+time, mark, audio, video {
     margin:0;
     padding:0;
     border:0;
@@ -23,54 +24,69 @@ time, mark, audio, video{
     vertical-align:baseline;
     background:transparent;
 }
-body{
-    /* line-height:1; */
+​
+body {
+    line-height:1;
 }
+​
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
 }
-nav ul{
+​
+nav ul {
     list-style:none;
 }
+​
 blockquote, q {
     quotes:none;
 }
+​
 blockquote:before, blockquote:after,
 q:before, q:after {
     content:'';
     content:none;
 }
-a{
+​
+a {
     margin:0;
     padding:0;
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
 }
-ins{
+​
+/* change colours to suit your needs */
+ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
-mark{
+​
+/* change colours to suit your needs */
+mark {
     background-color:#ff9;
     color:#000;
     font-style:italic;
     font-weight:bold;
 }
+​
 del {
     text-decoration: line-through;
 }
+​
 abbr[title], dfn[title] {
     border-bottom:1px dotted;
     cursor:help;
 }
-table{
+​
+table {
     border-collapse:collapse;
     border-spacing:0;
 }
-hr{
+​
+/* change border colour to suit your needs */
+hr {
     display:block;
     height:1px;
     border:0;  
@@ -78,12 +94,12 @@ hr{
     margin:1em 0;
     padding:0;
 }
+​
 input, select {
     vertical-align:middle;
 }
 /* ====== /リセットcss ====== */
 
-/* ここから本番のcss */
 body{
     font-family: "Noto Sans", sans-serif;
     color: #3B3B3B;
@@ -105,7 +121,7 @@ a{
     header{
         margin: 16px 96px 0 96px;
         height: 56px;
-        background: url(images/logo_header@2x.png) no-repeat;
+        background: url(../images/logo_header@2x.png) no-repeat;
         background-size: 50px 31px;
     }
     header a{
@@ -140,14 +156,15 @@ a{
     .none-mobile01{
         display: none;
     }
-   /* 携帯用のheaderはこちら */
+       /* 携帯用のheaderはこちら */
     .none-pc01{
         height: 56px;
         width: 375px;
         background: #918F89;
         position: relative;
         position: fixed;
-        z-index: 2;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     }
     .mobile-header-logo{
         width: 39px;
@@ -167,27 +184,27 @@ a{
 /* ①メイン画像 */
 @media (min-width: 376px){
     .main-message{
-        background: url(images/recruit_top.png) no-repeat;
+        background: url(../images/imgG.png) no-repeat;
         background-size: 100% 100%;
         height: 456px;
-        margin-bottom: 80px;
+        margin-bottom: 160px;
         position: relative;
-        margin-bottom: 161px;
     }
     .main-message h1{
-        color: #fff;
+        color: #918F89;
         font-size: 30px;
         letter-spacing: 3px;
         font-weight: normal;
         position: absolute;
-        top: 192px;
-        left: 228px;
+        top: 191px;
+        left: 
+        228px;
     }
 }
 /* ======= 携帯用メディアクエリ（メイン画像） ====== */
 @media (max-width: 375px){
     .main-message{
-        background: url(images/recruit_top_sp.png) no-repeat;
+        background: url(../images/news_top_sp.png) no-repeat;
         background-size: 100% 100%;
         height: 648px;
         position: relative;
@@ -201,114 +218,106 @@ a{
         font-weight: normal;
         position: absolute;
         top: 200px;
-        left: 119px;
+        left: 148.5px;
     }
 }
-/* ②採用情報  */
-    @media (min-width: 376px){
-        .recruit-information{
-            margin-bottom: 320px;
-            font-size: 14px;
-        }
-        .recruit-information h2{
-            font-size: 23px;
-            letter-spacing: 2.3px;
-            font-weight: normal;
-            text-align: center;
-            margin-bottom: 32px;
-        }
-        table{
-            border-collapse: collapse;
-            margin: 0 auto;
-            width: 640px;
-            height: 624px;
-        }
-        tr,td{
-            border: 1px solid #707070;
-        }
-        td{
-            vertical-align: middle;
-            padding: 16px 50px 16px 80px;
-        }
-        table li{
-            list-style: none;
-        }
-        table li::before {
-            content: '';
-            width: 2px;
-            height: 2px;
-            display: inline-block;
-            border-radius: 100%;
-            background: #3B3B3B;
-            position: relative;
-            left: -3px;
-            top: -3px;
-        }
-        span{
-            display: inline-block;
-            font-size: 16px;
-            padding-bottom: 6px;
-        }
-        .job-type{
-            width: 220px;
-            font-size: 16px;
-            padding: 0 auto;
-            background: #d5d5d5;
-            vertical-align: middle;
-        }
+/* ③NEWS */
+@media (min-width: 376px){
+    .img-container{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 56px 65px;
     }
-/* ======= 携帯用メディアクエリ（RECRUIT） ====== */
+}
+.coming-items{
+    height: 456px;
+    margin-bottom: 240px;
+}
+.coming-items h2{
+    font-size: 23px;
+    letter-spacing: 2.3px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.img-container img{
+    height: 320px;
+    width: 320px;
+}
+.furniture-img{
+    margin-right: 64px;
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+    width: 320px;
+}
+figure {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+}
+figcaption{
+    text-align: center;
+    line-height: 320px;
+    color: #fff;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 1;
+}
+.animation {
+    bottom: 0;
+    left: 0;
+}
+.coming-items p{
+    text-align: center;
+    letter-spacing: 0.43px;
+}
+.fa{
+    padding-left: 7px;
+    font-size: 11px;
+    color: #B2B2B2;
+}
+/* ======= 携帯用メディアクエリ（NEWS） ====== */
 @media (max-width: 375px){
-    .recruit-information{
-        margin-bottom: 256px;
+    .coming-items{
+        height: 976px;
     }
-    .recruit-information h2{
-            font-size: 23px;
-            letter-spacing: 2.3px;
-            font-weight: normal;
-            text-align: center;
-            margin-bottom: 32px;
-        }
-    table{
-        border-collapse: collapse;
-        margin: 0 auto;
-        width: 313px;
-        height: 624px;
-        font-size: 13px;
+    .img-container{
+        display: flex;
+        flex-flow: column;
+        margin: 0 51.5px;
     }
-    tr,td{
-        border: 1px solid #707070;
-    }
-    .job-details{
-        vertical-align: middle;
-        padding-left: 20px;
-    }
-    table li{
-        list-style: none;
-    }
-    table li::before {
-        content: '';
-        width: 2px;
-        height: 2px;
-        display: inline-block;
-        border-radius: 100%;
-        background: #3B3B3B;
+    .furniture-img{
         position: relative;
-        left: -3px;
-        top: -3px;
+        width: 272px;
+        height: 272px;
+        margin-bottom: 24px;
     }
-    span{
-        display: inline-block;
+    .furniture-img img{
+        width: 272px;
+        height: 272px;
+    }
+    .coming-items h2{
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        color: #3B3B3B;
+        margin-bottom: 24px;
+    }
+    figcaption{
         font-size: 15px;
-        padding-bottom: 6px;
-    }
-    .job-type{
-        width: 63px;
-        font-size: 14px;
-        padding: 0 auto;
-        background: #d5d5d5;
-        vertical-align: middle;
-        text-align: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background: rgba(0,0,0,.6);
+        line-height: 250px;
     }
 }
 /* ③フッター */
@@ -363,4 +372,100 @@ footer p{
         left: 145px;   
         margin-bottom: 32px;
     }
+}
+/* humburger hidden menu*/
+.globalMenuSp {
+    margin-top: 56px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+}
+.globalMenuSp ul {
+    background: #918F89;
+    opacity: 0.85;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 700px;
+}
+.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    height: 88px;
+    width: 100%;
+    line-height: 44px;
+    border-bottom: 1px solid #fff;
+}
+.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+}
+/* jQuery */
+.globalMenuSp.active {
+    transform: translateY(0%);
+}
+/* humburger-css */
+.navToggle {
+    display: block;
+    position: fixed;
+    right: 13px;
+    top: 10px;
+    width: 42px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 3;
+    background: #918F89;
+    text-align: center;
+}
+.navToggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #eee;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+.navToggle li:nth-child(1){
+    border-top: 1px;
+}
+.navToggle span:nth-child(1) {
+    top: 9px;
+}
+.navToggle span:nth-child(2) {
+    top: 18px;
+}
+.navToggle span:nth-child(3) {
+    top: 27px;
+}
+.navToggle span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+/* after tapping */
+.navToggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
