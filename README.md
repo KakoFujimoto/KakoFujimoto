@@ -6,6 +6,6 @@
 
 - [html-kaguya...家具屋LP（レスポンシブ）](https://github.com/KakoFujimoto/html_and_js/tree/html-kaguya)
 
-- [html-nri...NRIサイトの模写]()
+- [html-nri...NRIサイトの模写](https://github.com/KakoFujimoto/html_and_js/blob/html-nri/README.md)
 
 
