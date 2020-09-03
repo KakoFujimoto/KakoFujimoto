@@ -6,7 +6,7 @@
 
 - 家具屋サイト（レスポンシブ）...[見本XDサイト](https://xd.adobe.com/view/f4ad8df6-cce4-4626-5dbf-e05322ce4f32-829c/)
 
-- NRIサイトの模写...[本家]()
+- NRIサイトの模写...[本家](https://www.nri.com/jp/company/whats/story06)
 
 ### 実装箇所詳細
 
