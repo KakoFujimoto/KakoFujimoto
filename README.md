@@ -1,11 +1,16 @@
 # HTML5/CSS3/JavaScript
 
-## ブランチ詳細
+## アウトライン
 
-- [feature/js-challenge2...家具屋サイト（アニメーション）](https://github.com/KakoFujimoto/html_and_js/blob/feature/js-challenge2/README.md)
+- 家具屋サイト（アニメーション）...[見本XDサイト]()
 
-- [html-kaguya...家具屋サイト（レスポンシブ）](https://github.com/KakoFujimoto/html_and_js/tree/html-kaguya)
+- 家具屋サイト（レスポンシブ）...[見本XDサイト]()
 
-- [html-nri...NRIサイトの模写](https://github.com/KakoFujimoto/html_and_js/blob/html-nri/README.md)
+- NRIサイトの模写...[本家]()
 
+### 実装箇所詳細
 
+## 開発環境
+```
+MacOSX/Chrome84.0.4147.135
+```
